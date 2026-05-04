@@ -1,272 +1,400 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alif Emu - Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="container nav">
-        <a class="logo" href="#">Alif<span>.</span></a>
-        <nav class="menu">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#services">Service</a>
-          <a href="#portfolio">Portfolio</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <button class="btn btn-outline desktop-cta">Vamos conversar</button>
-      </div>
-    </header>
 
-    <div class="mobile-overlay" aria-hidden="true"></div>
-    <aside id="mobile-menu" class="mobile-menu" aria-hidden="true">
-      <button class="mobile-close" aria-label="Close menu">✕</button>
-      <nav class="mobile-nav">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pedro Neto | Web Designer & Desenvolvedor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="#">Pedro<span>.</span></a>
+      <nav class="menu">
+        <a href="#home">Home</a>
+        <div class="menu-item-has-children">
+          <a href="#solucoes" aria-haspopup="true" aria-expanded="false" class="menu-trigger">Soluções <i
+              class="fa-solid fa-chevron-down"></i></a>
+          <div class="mega-menu">
+            <div class="mega-menu-container">
+
+              <div class="mega-column">
+                <h4 class="mega-title">Atrair Clientes</h4>
+                <a href="#google-ads" class="mega-link">
+                  <div class="mega-icon"><i class="fa-solid fa-bullhorn"></i></div>
+                  <div class="mega-text">
+                    <span class="mega-name">Google Ads</span>
+                    <span class="mega-desc">Gestão de tráfego pago e campanhas para gerar leads e vendas</span>
+                  </div>
+                </a>
+              </div>
+
+              <div class="mega-column">
+                <h4 class="mega-title">Ter Presença Online</h4>
+                <a href="#sites" class="mega-link">
+                  <div class="mega-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                  <div class="mega-text">
+                    <span class="mega-name">Sites</span>
+                    <span class="mega-desc">Criação de sites profissionais, rápidos e responsivos</span>
+                  </div>
+                </a>
+              </div>
+
+              <div class="mega-column">
+                <h4 class="mega-title">Criar Conteúdo</h4>
+                <a href="#videos" class="mega-link">
+                  <div class="mega-icon"><i class="fa-solid fa-video"></i></div>
+                  <div class="mega-text">
+                    <span class="mega-name">Vídeos</span>
+                    <span class="mega-desc">Produção e edição de vídeos para atrair e engajar</span>
+                  </div>
+                </a>
+                <a href="#artes" class="mega-link">
+                  <div class="mega-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                  <div class="mega-text">
+                    <span class="mega-name">Artes Gráficas</span>
+                    <span class="mega-desc">Design para redes sociais e identidade visual</span>
+                  </div>
+                </a>
+              </div>
+
+              <div class="mega-column">
+                <h4 class="mega-title">Escalar o Negócio</h4>
+                <a href="#sistemas" class="mega-link">
+                  <div class="mega-icon"><i class="fa-solid fa-cogs"></i></div>
+                  <div class="mega-text">
+                    <span class="mega-name">Sistemas</span>
+                    <span class="mega-desc">Desenvolvimento de sistemas para otimizar processos</span>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <a href="#contato">Contato</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <button class="btn btn-outline desktop-cta">Vamos conversar</button>
+    </div>
+  </header>
+
+  <div class="mobile-overlay" aria-hidden="true"></div>
+  <aside id="mobile-menu" class="mobile-menu" aria-hidden="true">
+    <button class="mobile-close" aria-label="Close menu">✕</button>
+    <nav class="mobile-nav">
+      <a href="#home">Home</a>
+      <div class="mobile-menu-item-has-children">
+        <button class="mobile-menu-trigger" aria-expanded="false" aria-controls="mobile-mega-menu">Soluções <i
+            class="fa-solid fa-chevron-down"></i></button>
+        <div class="mobile-mega-menu" id="mobile-mega-menu">
+
+          <div class="mobile-mega-column">
+            <h4 class="mobile-mega-title">Atrair Clientes</h4>
+            <a href="#google-ads" class="mobile-mega-link">
+              <div class="mega-icon"><i class="fa-solid fa-bullhorn"></i></div>
+              <div class="mega-text">
+                <span class="mega-name">Google Ads</span>
+                <span class="mega-desc">Gestão de tráfego pago e campanhas para gerar leads e vendas</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="mobile-mega-column">
+            <h4 class="mobile-mega-title">Ter Presença Online</h4>
+            <a href="#sites" class="mobile-mega-link">
+              <div class="mega-icon"><i class="fa-solid fa-laptop-code"></i></div>
+              <div class="mega-text">
+                <span class="mega-name">Sites</span>
+                <span class="mega-desc">Criação de sites profissionais, rápidos e responsivos</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="mobile-mega-column">
+            <h4 class="mobile-mega-title">Criar Conteúdo</h4>
+            <a href="#videos" class="mobile-mega-link">
+              <div class="mega-icon"><i class="fa-solid fa-video"></i></div>
+              <div class="mega-text">
+                <span class="mega-name">Vídeos</span>
+                <span class="mega-desc">Produção e edição de vídeos para atrair e engajar</span>
+              </div>
+            </a>
+            <a href="#artes" class="mobile-mega-link">
+              <div class="mega-icon"><i class="fa-solid fa-pen-nib"></i></div>
+              <div class="mega-text">
+                <span class="mega-name">Artes Gráficas</span>
+                <span class="mega-desc">Design para redes sociais e identidade visual</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="mobile-mega-column">
+            <h4 class="mobile-mega-title">Escalar o Negócio</h4>
+            <a href="#sistemas" class="mobile-mega-link">
+              <div class="mega-icon"><i class="fa-solid fa-cogs"></i></div>
+              <div class="mega-text">
+                <span class="mega-name">Sistemas</span>
+                <span class="mega-desc">Desenvolvimento de sistemas para otimizar processos</span>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+      <a href="#contato">Contato</a>
+    </nav>
+    <button class="btn btn-outline mobile-menu-cta">Vamos conversar</button>
+  </aside>
+
+  <main>
+    <section id="home" class="section hero reveal">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Bem-vindo</p>
+          <h1>Eu sou <span>Pedro Neto</span><br /></h1>
+          <h2>Web Designer & Desenvolvedor</h2>
+          <p class="hero-text">
+            Te ajudo a cuidar da sua presença online. Só é lembrado quem é visto. Deixa que eu cuido disso pra você!
+          </p>
+          <div class="hero-actions">
+            <button class="btn btn-primary">Entre em contato</button>
+            <div class="social-links">
+              <a class="social-link" href="#" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.8A3.95 3.95 0 0 0 3.8 7.75v8.5a3.95 3.95 0 0 0 3.95 3.95h8.5a3.95 3.95 0 0 0 3.95-3.95v-8.5a3.95 3.95 0 0 0-3.95-3.95h-8.5Zm8.95 1.95a1.15 1.15 0 1 1 0 2.3 1.15 1.15 0 0 1 0-2.3ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4Z" />
+                </svg>
+              </a>
+              <a class="social-link" href="#" aria-label="WhatsApp">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 2a9.94 9.94 0 0 0-8.64 14.9L2 22l5.26-1.38A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.12.82.84-3.03-.2-.31A8.2 8.2 0 1 1 12 20.2Zm4.56-6.09c-.25-.13-1.48-.73-1.71-.81-.23-.08-.39-.12-.56.12-.17.25-.65.81-.79.98-.15.17-.29.19-.54.06-.25-.13-1.06-.39-2.01-1.25-.74-.66-1.24-1.48-1.39-1.73-.15-.25-.02-.39.11-.52.12-.12.25-.31.37-.46.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.23.9 2.43 1.03 2.6.13.17 1.76 2.69 4.26 3.77 2.51 1.08 2.51.72 2.97.68.46-.04 1.48-.6 1.69-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.31Z" />
+                </svg>
+              </a>
+              <a class="social-link" href="#" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 2A10 10 0 0 0 8.84 21.49c.5.09.68-.21.68-.47v-1.66c-2.78.6-3.37-1.18-3.37-1.18-.46-1.15-1.11-1.45-1.11-1.45-.9-.62.07-.61.07-.61 1 .07 1.53 1.02 1.53 1.02.88 1.5 2.32 1.06 2.88.81.09-.63.35-1.06.63-1.3-2.22-.25-4.55-1.1-4.55-4.92 0-1.09.39-1.97 1.03-2.66-.1-.25-.45-1.27.1-2.64 0 0 .85-.27 2.79 1.01A9.8 9.8 0 0 1 12 6.8c.86 0 1.73.12 2.55.36 1.94-1.28 2.79-1.01 2.79-1.01.55 1.37.2 2.39.1 2.64.64.69 1.03 1.57 1.03 2.66 0 3.83-2.34 4.67-4.57 4.91.36.31.68.91.68 1.84v2.72c0 .26.18.56.69.47A10 10 0 0 0 12 2Z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image-wrap">
+          <div class="hero-shape">
+            <img src="img/pn.png" alt="Designer portrait" />
+          </div>
+          <div class="badge b1 float">Presença Digital</div>
+          <div class="badge b2 float">Conversão</div>
+          <div class="badge b3 float">Mais clientes</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section reveal">
+      <div class="container services-inner">
+        <h2 class="section-title services-title">O que <span>faço</span> por você</h2>
+        <div class="services-grid">
+          <article class="service-card service-sites">
+            <div class="service-card-inner">
+              <div class="service-icon" aria-hidden="true">
+                <i class="fa-solid fa-display"></i>
+              </div>
+              <h3>Sites</h3>
+              <p>Sites institucionais e landing pages rápidas, responsivas e pensadas para conversão e boa posição no
+                Google.</p>
+            </div>
+          </article>
+          <article class="service-card service-videos">
+            <div class="service-card-inner">
+              <div class="service-icon" aria-hidden="true">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+              <h3>Vídeos com IA</h3>
+              <p>Vídeos com apoio de IA em roteiro, voz, legendas e dinamismo visual — mais conteúdo em menos tempo, com
+                qualidade.</p>
+            </div>
+          </article>
+          <article class="service-card service-ads">
+            <div class="service-card-inner">
+              <div class="service-icon" aria-hidden="true">
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+              </div>
+              <h3>Google Ads</h3>
+              <p>Campanhas de pesquisa e display bem estruturadas, com acompanhamento e ajustes para tráfego qualificado
+                e retorno.</p>
+            </div>
+          </article>
+          <article class="service-card service-sistemas">
+            <div class="service-card-inner">
+              <div class="service-icon" aria-hidden="true">
+                <i class="fa-solid fa-microchip"></i>
+              </div>
+              <h3>Sistemas</h3>
+              <p>Sistemas web sob medida para automatizar tarefas, integrar dados e dar escala ao teu negócio com
+                segurança.</p>
+            </div>
+          </article>
+          <article class="service-card service-artes">
+            <div class="service-card-inner">
+              <div class="service-icon" aria-hidden="true">
+                <i class="fa-solid fa-palette"></i>
+              </div>
+              <h3>Artes Gráficas</h3>
+              <p>Identidade visual, peças digitais e impressão com coerência de marca e acabamento que transmite
+                profissionalismo.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Últimos <span>Trabalhos</span></h2>
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">Tudo</button>
+          <button class="filter-btn" data-filter="sites">Sites</button>
+          <button class="filter-btn" data-filter="videos">Vídeos</button>
+          <button class="filter-btn" data-filter="artes">Artes</button>
+          <button class="filter-btn" data-filter="sistemas">Sistemas</button>
+        </div>
+        <div class="portfolio-grid">
+          <article class="work-item featured" data-category="sites">
+            <img src="img/portfolio/sites/rossiplan.png" alt="Rossiplan Seguros" />
+            <div class="overlay">Rossiplan Seguros</div>
+          </article>
+          <article class="work-item" data-category="videos">
+            <img src="img/portfolio/videos/automatais.gif" alt="Automata IS" />
+            <div class="overlay">Automata Intelligence Solutions</div>
+          </article>
+          <article class="work-item" data-category="artes">
+            <img src="img/portfolio/artes/post_pedronetoweb-500x500.jpg" alt="Pedro Neto Web" />
+            <div class="overlay">Pedro Neto Web</div>
+          </article>
+          <article class="work-item" data-category="sistemas">
+            <img src="img/portfolio/sistemas/rossicrm.png" alt="Rossi CRM" />
+            <div class="overlay">Rossi CRM</div>
+          </article>
+          <article class="work-item" data-category="sites">
+            <img src="img/portfolio/sites/russiembalagens.png" alt="Russi Embalagens" />
+            <div class="overlay">Russi Embalagens</div>
+          </article>
+          <article class="work-item" data-category="artes">
+            <img src="img/portfolio/artes/luh-500x500.png" alt="Luh Limpeza" />
+            <div class="overlay">Luh Limpeza</div>
+          </article>
+          <article class="work-item" data-category="sistemas">
+            <img src="img/portfolio/sistemas/fastdanfe.png" alt="Fast Danfe" />
+            <div class="overlay">Fast Danfe</div>
+          </article>
+          <article class="work-item" data-category="videos">
+            <img src="img/portfolio/videos/linguagem_corporal.gif" alt="Linguagem Corporal" />
+            <div class="overlay">Linguagem Corporal</div>
+          </article>
+          <article class="work-item" data-category="sites">
+            <img src="img/portfolio/sites/automata_custom.png" alt="Automata Custom" />
+            <div class="overlay">Automata Custom</div>
+          </article>
+          <article class="work-item" data-category="artes">
+            <img src="img/portfolio/artes/post_websapiens-500x500.jpg" alt="WebSapiens" />
+            <div class="overlay">WebSapiens</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section stats reveal">
+      <div class="container stats-row">
+        <div class="stat reveal stat-delay-1">
+          <h3>276+</h3>
+          <p>Projects Completed</p>
+        </div>
+        <div class="stat reveal stat-delay-2">
+          <h3>164+</h3>
+          <p>Worldwide Clients</p>
+        </div>
+        <div class="stat reveal stat-delay-3">
+          <h3>13+</h3>
+          <p>Years Experience</p>
+        </div>
+        <div class="stat reveal stat-delay-4">
+          <h3>19+</h3>
+          <p>Awards Won</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials reveal">
+      <div class="container testimonial-wrap">
+        <h2 class="section-title">O que dizem <br /><span>Sobre mim</span></h2>
+        <p class="quote">
+          “O Pedro cuida da parte de sites desde o começo da empresa e estamos muito felizes com o resultado até hoje.
+          Continuaremos sempre juntos!”
+        </p>
+        <p class="quote-author">Dirney Rossi - CEO Rossiplan Seguros</p>
+        <img class="avatar a1 float-slow" src="https://i.pravatar.cc/80?img=8" alt="Avatar" />
+        <img class="avatar a2 float-fast" src="https://i.pravatar.cc/80?img=18" alt="Avatar" />
+        <img class="avatar a3 float-mid" src="https://i.pravatar.cc/80?img=32" alt="Avatar" />
+        <img class="avatar a4 float-slow" src="https://i.pravatar.cc/80?img=44" alt="Avatar" />
+        <img class="avatar a5 float-fast" src="https://i.pravatar.cc/80?img=11" alt="Avatar" />
+      </div>
+    </section>
+
+    <section id="contact" class="section contact reveal">
+      <div class="container contact-box">
+        <div class="contact-info">
+          <h2>Entre em contato comigo</h2>
+          <p><strong>Email:</strong> contato@pedronetoweb.com.br</p>
+          <p><strong>WhatsApp:</strong> 11 99207-5991</p>
+        </div>
+        <form class="contact-form">
+          <input type="text" placeholder="Seu nome" required />
+          <input type="email" placeholder="Seu email" required />
+          <input type="text" placeholder="Assunto" required />
+          <textarea placeholder="Mensagen" required></textarea>
+          <button class="btn btn-primary" type="submit">Enviar mensagem</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <a class="logo" href="#">Alif<span>.</span></a>
+      <div class="footer-links">
         <a href="#home">Home</a>
         <a href="#about">About</a>
-        <a href="#services">Service</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
-      </nav>
-      <button class="btn btn-outline mobile-menu-cta">Vamos conversar</button>
-    </aside>
-
-    <main>
-      <section id="home" class="section hero reveal">
-        <div class="container hero-grid">
-          <div class="hero-content">
-            <p class="eyebrow">Bem-vindo</p>
-            <h1>Eu sou <span>Pedro Neto</span><br /></h1>
-            <h2>Web Designer & Desenvolvedor</h2>
-            <p class="hero-text">
-            Te ajduo a cuidar da sua presença online. Só é lembrado quem é visto. Deixa que eu cuido disso pra você!
-            </p>
-            <div class="hero-actions">
-              <button class="btn btn-primary">Entre em contato</button>
-              <div class="social-links">
-                <a class="social-link" href="#" aria-label="Instagram">
-                  <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <path
-                      d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.8A3.95 3.95 0 0 0 3.8 7.75v8.5a3.95 3.95 0 0 0 3.95 3.95h8.5a3.95 3.95 0 0 0 3.95-3.95v-8.5a3.95 3.95 0 0 0-3.95-3.95h-8.5Zm8.95 1.95a1.15 1.15 0 1 1 0 2.3 1.15 1.15 0 0 1 0-2.3ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4Z"
-                    />
-                  </svg>
-                </a>
-                <a class="social-link" href="#" aria-label="WhatsApp">
-                  <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <path
-                      d="M12 2a9.94 9.94 0 0 0-8.64 14.9L2 22l5.26-1.38A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.12.82.84-3.03-.2-.31A8.2 8.2 0 1 1 12 20.2Zm4.56-6.09c-.25-.13-1.48-.73-1.71-.81-.23-.08-.39-.12-.56.12-.17.25-.65.81-.79.98-.15.17-.29.19-.54.06-.25-.13-1.06-.39-2.01-1.25-.74-.66-1.24-1.48-1.39-1.73-.15-.25-.02-.39.11-.52.12-.12.25-.31.37-.46.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.23.9 2.43 1.03 2.6.13.17 1.76 2.69 4.26 3.77 2.51 1.08 2.51.72 2.97.68.46-.04 1.48-.6 1.69-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.31Z"
-                    />
-                  </svg>
-                </a>
-                <a class="social-link" href="#" aria-label="GitHub">
-                  <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <path
-                      d="M12 2A10 10 0 0 0 8.84 21.49c.5.09.68-.21.68-.47v-1.66c-2.78.6-3.37-1.18-3.37-1.18-.46-1.15-1.11-1.45-1.11-1.45-.9-.62.07-.61.07-.61 1 .07 1.53 1.02 1.53 1.02.88 1.5 2.32 1.06 2.88.81.09-.63.35-1.06.63-1.3-2.22-.25-4.55-1.1-4.55-4.92 0-1.09.39-1.97 1.03-2.66-.1-.25-.45-1.27.1-2.64 0 0 .85-.27 2.79 1.01A9.8 9.8 0 0 1 12 6.8c.86 0 1.73.12 2.55.36 1.94-1.28 2.79-1.01 2.79-1.01.55 1.37.2 2.39.1 2.64.64.69 1.03 1.57 1.03 2.66 0 3.83-2.34 4.67-4.57 4.91.36.31.68.91.68 1.84v2.72c0 .26.18.56.69.47A10 10 0 0 0 12 2Z"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="hero-image-wrap">
-            <div class="hero-shape">
-              <img
-                src="img/pn.png"
-                alt="Designer portrait"
-              />
-            </div>
-            <div class="badge b1 float">276+ Projects</div>
-            <div class="badge b2 float">13+ Years</div>
-            <div class="badge b3 float">164+ Clients</div>
-          </div>
-        </div>
-      </section>
-
-      <section id="services" class="section reveal">
-        <div class="container services-inner">
-          <h2 class="section-title services-title">O que <span>faço</span> por ti</h2>
-          <div class="services-grid">
-            <article class="service-card">
-              <div class="service-card-inner">
-                <div class="service-icon" aria-hidden="true">
-                  <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="8" y="10" width="32" height="26" rx="3" />
-                    <path d="M8 18h32M16 34h8" />
-                  </svg>
-                </div>
-                <h3>Sites</h3>
-                <p>Sites institucionais e landing pages rápidas, responsivas e pensadas para conversão e boa posição no Google.</p>
-              </div>
-            </article>
-            <article class="service-card">
-              <div class="service-card-inner">
-                <div class="service-icon" aria-hidden="true">
-                  <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="10" y="14" width="22" height="18" rx="2" />
-                    <path d="M32 20l6-4v16l-6-4M14 22v4M18 22v4" />
-                  </svg>
-                </div>
-                <h3>Vídeos com IA</h3>
-                <p>Vídeos com apoio de IA em roteiro, voz, legendas e dinamismo visual — mais conteúdo em menos tempo, com qualidade.</p>
-              </div>
-            </article>
-            <article class="service-card">
-              <div class="service-card-inner">
-                <div class="service-icon" aria-hidden="true">
-                  <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 32c0-8 4-14 12-14s12 6 12 14" />
-                    <circle cx="24" cy="16" r="6" />
-                    <path d="M28 12l4-4M20 8l-2-4M32 20h6" />
-                  </svg>
-                </div>
-                <h3>Google Ads</h3>
-                <p>Campanhas de pesquisa e display bem estruturadas, com acompanhamento e ajustes para tráfego qualificado e retorno.</p>
-              </div>
-            </article>
-            <article class="service-card">
-              <div class="service-card-inner">
-                <div class="service-icon" aria-hidden="true">
-                  <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="10" y="12" width="28" height="26" rx="2" />
-                    <path d="M16 20h16M16 26h10M16 32h14" />
-                    <circle cx="36" cy="10" r="3" />
-                  </svg>
-                </div>
-                <h3>Sistemas</h3>
-                <p>Sistemas web sob medida para automatizar tarefas, integrar dados e dar escala ao teu negócio com segurança.</p>
-              </div>
-            </article>
-            <article class="service-card">
-              <div class="service-card-inner">
-                <div class="service-icon" aria-hidden="true">
-                  <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M14 30c-2-4-1-9 3-12 4-3 9-2 12 2" />
-                    <path d="M20 36c5 2 11-1 13-6s0-11-5-13" />
-                    <circle cx="30" cy="14" r="4" />
-                    <circle cx="18" cy="22" r="3" />
-                  </svg>
-                </div>
-                <h3>Artes Gráficas</h3>
-                <p>Identidade visual, peças digitais e impressão com coerência de marca e acabamento que transmite profissionalismo.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="portfolio" class="section reveal">
-        <div class="container">
-          <h2 class="section-title">My Recent <span>Works</span></h2>
-          <div class="filters">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="web">Web</button>
-            <button class="filter-btn" data-filter="branding">Branding</button>
-            <button class="filter-btn" data-filter="ui">UI</button>
-          </div>
-          <div class="portfolio-grid">
-            <article class="work-item featured" data-category="web">
-              <img src="https://images.unsplash.com/photo-1557683316-973673baf926?w=1200&q=80" alt="Creative Agency" />
-              <div class="overlay">Creative Agency</div>
-            </article>
-            <article class="work-item" data-category="branding">
-              <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?w=1200&q=80" alt="Luxury Brand" />
-              <div class="overlay">Luxury Brand</div>
-            </article>
-            <article class="work-item" data-category="ui">
-              <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=1200&q=80" alt="Dashboard UI" />
-              <div class="overlay">Dashboard UI</div>
-            </article>
-            <article class="work-item" data-category="web">
-              <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=1200&q=80" alt="Portfolio Site" />
-              <div class="overlay">Portfolio Site</div>
-            </article>
-            <article class="work-item" data-category="branding">
-              <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=1200&q=80" alt="Vibrant Identity" />
-              <div class="overlay">Vibrant Identity</div>
-            </article>
-            <article class="work-item" data-category="ui">
-              <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?w=1200&q=80" alt="Mobile UI Kit" />
-              <div class="overlay">Mobile UI Kit</div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section stats reveal">
-        <div class="container stats-row">
-          <div class="stat reveal stat-delay-1"><h3>276+</h3><p>Projects Completed</p></div>
-          <div class="stat reveal stat-delay-2"><h3>164+</h3><p>Worldwide Clients</p></div>
-          <div class="stat reveal stat-delay-3"><h3>13+</h3><p>Years Experience</p></div>
-          <div class="stat reveal stat-delay-4"><h3>19+</h3><p>Awards Won</p></div>
-        </div>
-      </section>
-
-      <section class="section testimonials reveal">
-        <div class="container testimonial-wrap">
-          <h2 class="section-title">What People Talk<br /><span>About Me</span></h2>
-          <p class="quote">
-            “Alif helped us transform a rough idea into a polished product experience that users
-            instantly trusted.”
-          </p>
-          <p class="quote-author">Natalie Mason - Product Manager</p>
-          <img class="avatar a1 float-slow" src="https://i.pravatar.cc/80?img=6" alt="Avatar" />
-          <img class="avatar a2 float-fast" src="https://i.pravatar.cc/80?img=18" alt="Avatar" />
-          <img class="avatar a3 float-mid" src="https://i.pravatar.cc/80?img=32" alt="Avatar" />
-          <img class="avatar a4 float-slow" src="https://i.pravatar.cc/80?img=44" alt="Avatar" />
-          <img class="avatar a5 float-fast" src="https://i.pravatar.cc/80?img=11" alt="Avatar" />
-        </div>
-      </section>
-
-      <section id="contact" class="section contact reveal">
-        <div class="container contact-box">
-          <div class="contact-info">
-            <h2>Let's discuss your project</h2>
-            <p><strong>Email:</strong> hello@alif.design</p>
-            <p><strong>Phone:</strong> +880 1700-000000</p>
-            <p><strong>Location:</strong> Dhaka, Bangladesh</p>
-          </div>
-          <form class="contact-form">
-            <input type="text" placeholder="Name" required />
-            <input type="email" placeholder="Email" required />
-            <input type="text" placeholder="Subject" required />
-            <textarea placeholder="Message" required></textarea>
-            <button class="btn btn-primary" type="submit">Send Message</button>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="container footer-row">
-        <a class="logo" href="#">Alif<span>.</span></a>
-        <div class="footer-links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#portfolio">Portfolio</a>
-          <a href="#contact">Contact</a>
-        </div>
-        <div class="socials">
-          <a href="#">Dribbble</a>
-          <a href="#">Behance</a>
-          <a href="#">LinkedIn</a>
-        </div>
       </div>
-    </footer>
+      <div class="socials">
+        <a href="#">Dribbble</a>
+        <a href="#">Behance</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
 
-    <script src="js/script.js"></script>
-  </body>
+  <a href="https://wa.me/5511999999999" class="whatsapp-btn" target="_blank" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M12 2a9.94 9.94 0 0 0-8.64 14.9L2 22l5.26-1.38A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.12.82.84-3.03-.2-.31A8.2 8.2 0 1 1 12 20.2Zm4.56-6.09c-.25-.13-1.48-.73-1.71-.81-.23-.08-.39-.12-.56.12-.17.25-.65.81-.79.98-.15.17-.29.19-.54.06-.25-.13-1.06-.39-2.01-1.25-.74-.66-1.24-1.48-1.39-1.73-.15-.25-.02-.39.11-.52.12-.12.25-.31.37-.46.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.23.9 2.43 1.03 2.6.13.17 1.76 2.69 4.26 3.77 2.51 1.08 2.51.72 2.97.68.46-.04 1.48-.6 1.69-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.31Z" />
+    </svg>
+  </a>
+
+  <script src="js/script.js"></script>
+</body>
+
 </html>

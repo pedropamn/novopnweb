@@ -452,6 +452,48 @@ mobileMenuLinks.forEach((link) => {
   link.addEventListener("click", () => closeMobileMenu("menu-link"));
 });
 
+const mobileMegaTrigger = document.querySelector(".mobile-menu-trigger");
+const mobileMegaMenu = document.querySelector(".mobile-mega-menu");
+
+if (mobileMegaTrigger && mobileMegaMenu) {
+  mobileMegaTrigger.addEventListener("click", (e) => {
+    e.preventDefault();
+    const isExpanded = mobileMegaTrigger.getAttribute("aria-expanded") === "true";
+    mobileMegaTrigger.setAttribute("aria-expanded", !isExpanded);
+    mobileMegaMenu.classList.toggle("is-open");
+  });
+}
+
+// Desktop Mega Menu Keyboard Accessibility
+const desktopMegaTrigger = document.querySelector(".menu-trigger");
+const desktopMegaMenu = document.querySelector(".mega-menu");
+
+if (desktopMegaTrigger && desktopMegaMenu) {
+  desktopMegaTrigger.addEventListener("click", (e) => {
+    e.preventDefault();
+    const isExpanded = desktopMegaTrigger.getAttribute("aria-expanded") === "true";
+    desktopMegaTrigger.setAttribute("aria-expanded", !isExpanded);
+    desktopMegaMenu.classList.toggle("is-open", !isExpanded);
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && desktopMegaMenu.classList.contains("is-open")) {
+      desktopMegaTrigger.setAttribute("aria-expanded", "false");
+      desktopMegaMenu.classList.remove("is-open");
+      desktopMegaTrigger.focus();
+    }
+  });
+
+  desktopMegaTrigger.parentElement.addEventListener("mouseenter", () => {
+    desktopMegaTrigger.setAttribute("aria-expanded", "true");
+  });
+
+  desktopMegaTrigger.parentElement.addEventListener("mouseleave", () => {
+    desktopMegaTrigger.setAttribute("aria-expanded", "false");
+    desktopMegaMenu.classList.remove("is-open");
+  });
+}
+
 let lastScrollLogAt = 0;
 window.addEventListener(
   "scroll",
