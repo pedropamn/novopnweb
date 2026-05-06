@@ -1,3 +1,13 @@
+// Header scroll effect
+const header = document.querySelector(".header");
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 50) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
+
 // Scroll reveal using Intersection Observer
 const revealElements = document.querySelectorAll(".reveal");
 
@@ -56,9 +66,50 @@ revealElements.forEach((el) => revealObserver.observe(el));
   mqMobile.addEventListener("change", syncObservation);
 })();
 
-// Portfolio category filter
+// Portfolio category filter + "Ver mais" row-limit
 const filterButtons = document.querySelectorAll(".filter-btn");
 const workItems = document.querySelectorAll(".work-item");
+const portfolioGrid = document.querySelector(".portfolio-grid");
+const moreBtn = document.getElementById("portfolio-more-btn");
+const ROWS_VISIBLE = 2;
+let portfolioExpanded = false;
+
+const getColumnsCount = () => {
+  if (!portfolioGrid) return 1;
+  const style = window.getComputedStyle(portfolioGrid);
+  const cols = style.getPropertyValue("grid-template-columns");
+  return cols.split(" ").length;
+};
+
+/**
+ * After a filter change, determine which visible items fall beyond ROWS_VISIBLE rows
+ * and hide/show them based on portfolioExpanded state. Also show/hide the More btn.
+ */
+const applyRowLimit = () => {
+  if (!moreBtn) return;
+  const cols = getColumnsCount();
+  const maxVisible = ROWS_VISIBLE * cols;
+
+  // All items not hidden by the category filter
+  const shown = [...workItems].filter(item => !item.classList.contains("hidden"));
+
+  shown.forEach((item, idx) => {
+    if (idx >= maxVisible && !portfolioExpanded) {
+      item.classList.add("row-hidden");
+    } else {
+      item.classList.remove("row-hidden");
+    }
+  });
+
+  // Only show the button if there are items beyond the limit
+  if (shown.length > maxVisible) {
+    moreBtn.style.display = "block";
+    moreBtn.textContent = portfolioExpanded ? "Ver menos" : "Ver mais";
+    moreBtn.setAttribute("aria-expanded", String(portfolioExpanded));
+  } else {
+    moreBtn.style.display = "none";
+  }
+};
 
 filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -67,13 +118,32 @@ filterButtons.forEach((button) => {
     filterButtons.forEach((btn) => btn.classList.remove("active"));
     button.classList.add("active");
 
+    // Reset expand state on filter change
+    portfolioExpanded = false;
+
     workItems.forEach((item) => {
       const category = item.dataset.category;
       const shouldShow = selected === "all" || selected === category;
       item.classList.toggle("hidden", !shouldShow);
+      item.classList.remove("row-hidden"); // reset, applyRowLimit will re-add
     });
+
+    applyRowLimit();
   });
 });
+
+if (moreBtn) {
+  moreBtn.addEventListener("click", () => {
+    portfolioExpanded = !portfolioExpanded;
+    applyRowLimit();
+  });
+}
+
+// Re-apply on resize (column count can change)
+window.addEventListener("resize", applyRowLimit);
+
+// Initial run
+applyRowLimit();
 
 // Prevent form submission refresh in static demo
 const form = document.querySelector(".contact-form");
@@ -573,7 +643,7 @@ document.addEventListener(
 
     const particleCount = () => {
       const area = w * h;
-      return Math.min(120, Math.max(45, Math.floor(area / 8000)));
+      return Math.min(150, Math.max(60, Math.floor(area / 5500)));
     };
 
     const initParticles = () => {
@@ -583,8 +653,8 @@ document.addEventListener(
         particles.push({
           x: Math.random() * w,
           y: Math.random() * h,
-          vx: (Math.random() - 0.5) * 0.42,
-          vy: (Math.random() - 0.5) * 0.42,
+          vx: (Math.random() - 0.5) * 1.2,
+          vy: (Math.random() - 0.5) * 1.2,
           r: Math.random() * 1.15 + 0.65
         });
       }
@@ -684,6 +754,56 @@ document.addEventListener(
       cancelAnimationFrame(rafId);
     } else {
       rafId = requestAnimationFrame(tick);
+    }
+  });
+})();
+
+// ===== Portfolio Lightbox =====
+(() => {
+  const lightbox  = document.getElementById("portfolio-lightbox");
+  const lbImg     = document.getElementById("portfolio-lightbox-img");
+  const lbCaption = document.getElementById("portfolio-lightbox-caption");
+  const lbClose   = document.getElementById("portfolio-lightbox-close");
+
+  if (!lightbox || !lbImg || !lbClose) return;
+
+  const openLightbox = (src, alt) => {
+    lbImg.src = src;
+    lbImg.alt = alt;
+    if (lbCaption) lbCaption.textContent = alt;
+    lightbox.classList.add("is-open");
+    document.body.style.overflow = "hidden";
+    lbClose.focus();
+  };
+
+  const closeLightbox = () => {
+    lightbox.classList.remove("is-open");
+    document.body.style.overflow = "";
+    setTimeout(() => { lbImg.src = ""; }, 350);
+  };
+
+  // Click any work-item to enlarge its image
+  document.querySelectorAll(".work-item").forEach(item => {
+    item.addEventListener("click", () => {
+      const img = item.querySelector("img");
+      if (!img) return;
+      const caption = item.querySelector(".overlay")?.textContent || img.alt;
+      openLightbox(img.src, caption);
+    });
+  });
+
+  // Close via button
+  lbClose.addEventListener("click", closeLightbox);
+
+  // Close on backdrop click (click on the overlay itself, not the image)
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  // Close on Escape
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && lightbox.classList.contains("is-open")) {
+      closeLightbox();
     }
   });
 })();

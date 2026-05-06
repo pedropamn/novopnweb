@@ -15,7 +15,7 @@
 <body>
   <header class="header">
     <div class="container nav">
-      <a class="logo" href="#">Pedro<span>.</span></a>
+      <a class="logo" href="#"><img src="img/pnlogo.png" width="50px"></a>
       <nav class="menu">
         <a href="#home">Home</a>
         <div class="menu-item-has-children">
@@ -162,7 +162,7 @@
       <div class="container hero-grid">
         <div class="hero-content">
           <p class="eyebrow">Bem-vindo</p>
-          <h1>Eu sou <span>Pedro Neto</span><br /></h1>
+          <h1>Eu sou <span>Pedro Neto</span></h1>
           <h2>Web Designer & Desenvolvedor</h2>
           <p class="hero-text">
             Te ajudo a cuidar da sua presença online. Só é lembrado quem é visto. Deixa que eu cuido disso pra você!
@@ -200,9 +200,14 @@
           <div class="badge b3 float">Mais clientes</div>
         </div>
       </div>
+      <div class="custom-shape-divider-bottom">
+        <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+          <path class="shape-fill-soft" d="M0,160L48,170.7C96,181,192,203,288,197.3C384,192,480,160,576,149.3C672,139,768,149,864,170.7C960,192,1056,224,1152,218.7C1248,213,1344,171,1392,149.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+      </div>
     </section>
 
-    <section id="services" class="section reveal">
+    <section id="services" class="section reveal" style="background: var(--bg-soft); padding-top: 20px;">
       <div class="container services-inner">
         <div class="services-header">
           <div class="services-badge"><span class="badge-dot"></span> SOLUÇÕES</div>
@@ -319,6 +324,11 @@
     </section>
 
     <section id="portfolio" class="section reveal">
+      <div class="custom-shape-divider-top">
+        <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+          <path class="shape-fill-soft" d="M0,32L48,58.7C96,85,192,139,288,144C384,149,480,107,576,96C672,85,768,107,864,128C960,149,1056,171,1152,160C1248,149,1344,107,1392,85.3L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+        </svg>
+      </div>
       <div class="container">
         <h2 class="section-title">Últimos <span>Trabalhos</span></h2>
         <div class="filters">
@@ -370,6 +380,12 @@
             <div class="overlay">WebSapiens</div>
           </article>
         </div>
+        <button class="portfolio-more-btn" id="portfolio-more-btn" aria-expanded="false">Ver mais</button>
+      </div>
+      <div class="custom-shape-divider-bottom">
+        <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+          <path class="shape-fill-white" d="M0,192L48,186.7C96,181,192,171,288,181.3C384,192,480,224,576,213.3C672,203,768,149,864,133.3C960,117,1056,139,1152,160C1248,181,1344,203,1392,213.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
       </div>
     </section>
     <section id="partners" class="section partners reveal">
@@ -409,7 +425,12 @@
       </div>
     </section>
 
-    <section id="contact" class="section contact-premium reveal">
+    <section id="contact" class="section contact-premium reveal" style="position: relative;">
+      <div class="custom-shape-divider-top">
+        <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+          <path class="shape-fill-white" d="M0,256L48,229.3C96,203,192,149,288,154.7C384,160,480,224,576,218.7C672,213,768,139,864,128C960,117,1056,171,1152,197.3C1248,224,1344,224,1392,224L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+        </svg>
+      </div>
       <div class="container">
         <div class="contact-split-card">
           <!-- Left Panel -->
@@ -421,7 +442,8 @@
             <div class="contact-left-content">
               <span class="contact-badge"><i class="fa-regular fa-comment-dots"></i> Vamos conversar?</span>
               <h2 class="contact-title">Entre em contato <span class="contact-highlight">comigo!</span></h2>
-              <p class="contact-desc">Estou pronto para entender o seu projeto e transformar suas ideias em resultados reais para o seu negócio.</p>
+              <p class="contact-desc">Estou pronto para entender o seu projeto e transformar suas ideias em resultados
+                reais para o seu negócio.</p>
 
               <div class="contact-methods">
                 <div class="method-item">
@@ -472,7 +494,8 @@
               <button class="btn-submit-premium" type="submit">
                 <i class="fa-regular fa-paper-plane"></i> Enviar mensagem
               </button>
-              <p class="trust-text"><i class="fa-solid fa-lock"></i> Seus dados estão seguros. Não compartilhamos suas informações.</p>
+              <p class="trust-text"><i class="fa-solid fa-lock"></i> Seus dados estão seguros. Não compartilhamos suas
+                informações.</p>
             </form>
           </div>
         </div>
@@ -481,8 +504,13 @@
   </main>
 
   <footer class="footer">
+    <div class="custom-shape-divider-top">
+      <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path class="shape-fill-soft" d="M0,128L48,138.7C96,149,192,171,288,181.3C384,192,480,192,576,170.7C672,149,768,107,864,117.3C960,128,1056,192,1152,213.3C1248,235,1344,213,1392,202.7L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+      </svg>
+    </div>
     <div class="container footer-row">
-      <a class="logo" href="#">Alif<span>.</span></a>
+      <a class="logo" href="#"><img src="img/pnlogo.png" width="50px"></a>
       <div class="footer-links">
         <a href="#home">Home</a>
         <a href="#about">About</a>
@@ -503,6 +531,14 @@
         d="M12 2a9.94 9.94 0 0 0-8.64 14.9L2 22l5.26-1.38A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.12.82.84-3.03-.2-.31A8.2 8.2 0 1 1 12 20.2Zm4.56-6.09c-.25-.13-1.48-.73-1.71-.81-.23-.08-.39-.12-.56.12-.17.25-.65.81-.79.98-.15.17-.29.19-.54.06-.25-.13-1.06-.39-2.01-1.25-.74-.66-1.24-1.48-1.39-1.73-.15-.25-.02-.39.11-.52.12-.12.25-.31.37-.46.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.23.9 2.43 1.03 2.6.13.17 1.76 2.69 4.26 3.77 2.51 1.08 2.51.72 2.97.68.46-.04 1.48-.6 1.69-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.31Z" />
     </svg>
   </a>
+
+  <!-- Portfolio Lightbox -->
+
+  <div class="portfolio-lightbox" id="portfolio-lightbox" role="dialog" aria-modal="true" aria-label="Imagem ampliada">
+    <button class="portfolio-lightbox__close" id="portfolio-lightbox-close" aria-label="Fechar">&times;</button>
+    <img class="portfolio-lightbox__img" id="portfolio-lightbox-img" src="" alt="" />
+    <span class="portfolio-lightbox__caption" id="portfolio-lightbox-caption"></span>
+  </div>
 
   <script src="js/script.js"></script>
 </body>
