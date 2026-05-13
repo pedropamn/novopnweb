@@ -1,0 +1,740 @@
+/* CSS específico para a página de Google Ads (ads.html) */
+
+:root {
+  --ads-blue-main: #2685be;
+  --ads-blue-gradient-1: #071b49;
+  --ads-blue-gradient-2: #0d2f75;
+  --ads-blue-gradient-3: #114ea3;
+  --ads-bg-light: #f8fbff;
+  --ads-text-dark: #1e293b;
+  --ads-text-light: #f1f5f9;
+  --ads-accent: #3b82f6;
+  --ads-green: #10b981;
+}
+
+/* ==========================================================================
+   HEADER / NAVBAR
+   ========================================================================== */
+.header.scrolled {
+  background: linear-gradient(90deg, var(--ads-blue-gradient-1), var(--ads-blue-gradient-2));
+}
+
+.cta-ads {
+  background: #ffffff;
+  color: var(--ads-blue-main);
+  border-color: #ffffff;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.header.scrolled .cta-ads {
+  background: #ffffff;
+  color: var(--ads-blue-main);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+.ads-hero {
+  position: relative;
+  padding: 160px 0 180px;
+  background: linear-gradient(135deg, var(--ads-blue-gradient-1) 0%, var(--ads-blue-gradient-2) 50%, var(--ads-blue-gradient-3) 100%);
+  color: white;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.ads-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle at 10% 80%, rgba(59, 130, 246, 0.1) 0%, transparent 40%),
+    radial-gradient(circle at 80% 20%, rgba(38, 133, 190, 0.15) 0%, transparent 40%);
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.ads-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.ads-badge {
+  display: inline-block;
+  background: rgba(38, 133, 190, 0.2);
+  backdrop-filter: blur(8px);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  border: 1px solid rgba(38, 133, 190, 0.4);
+  color: #8ed1fc;
+}
+
+.ads-hero-content h1 {
+  font-size: clamp(2.5rem, 4.5vw, 4.2rem);
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.ads-hero-content h1 span {
+  color: #8ed1fc;
+}
+
+.ads-hero-text {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 30px;
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+.ads-features-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.ads-feat {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ads-feat i {
+  color: #8ed1fc;
+  font-size: 1rem;
+}
+
+.ads-hero-mockup {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ads-mockup-container {
+  position: relative;
+  width: 100%;
+  max-width: 650px;
+}
+
+.ads-hero-img {
+  width: 100%;
+  height: auto;
+  border: none;
+  border-radius: 24px;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 0 60px rgba(38, 133, 190, 0.4));
+}
+
+.shape-fill-light {
+  fill: var(--ads-bg-light);
+}
+
+.shape-fill-darkblue {
+  fill: var(--ads-blue-gradient-1);
+}
+
+/* ==========================================================================
+   POR QUE INVESTIR EM GOOGLE ADS?
+   ========================================================================== */
+.why-ads {
+  background-color: var(--ads-bg-light);
+  padding: 80px 0 100px;
+}
+
+.eyebrow-text {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--ads-blue-main);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 16px auto 48px;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  justify-content: center;
+}
+
+.benefit-card {
+  background: white;
+  padding: 32px 24px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.benefit-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(38, 133, 190, 0.1);
+  color: var(--ads-blue-main);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  margin: 0 auto 20px;
+}
+
+.benefit-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: var(--ads-text-dark);
+}
+
+.benefit-card p {
+  font-size: 0.9rem;
+  color: #64748b;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ==========================================================================
+   COMO POSSO AJUDAR SEU NEGÓCIO
+   ========================================================================== */
+.how-i-help {
+  background-color: white;
+  padding: 100px 0 160px;
+  position: relative;
+}
+
+.ads-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+  margin-top: 50px;
+}
+
+.ads-service-card {
+  background: var(--ads-bg-light);
+  border-radius: 24px;
+  padding: 40px 32px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+}
+
+.ads-service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+  background: white;
+}
+
+.ads-service-icon {
+  width: 50px;
+  height: 50px;
+  background: white;
+  color: var(--ads-blue-main);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 24px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.ads-service-card h4 {
+  font-size: 1.25rem;
+  color: var(--ads-text-dark);
+  margin: 0 0 12px 0;
+}
+
+.ads-service-card p {
+  font-size: 0.95rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0 0 24px 0;
+  flex: 1;
+}
+
+.mini-analytics {
+  height: 40px;
+  width: 100%;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: var(--ads-blue-main);
+  font-weight: 600;
+}
+
+.mini-chart {
+  display: flex;
+  gap: 4px;
+  align-items: flex-end;
+  height: 20px;
+}
+
+.mini-chart span {
+  width: 4px;
+  background: var(--ads-blue-main);
+  border-radius: 2px;
+}
+
+.mini-chart span:nth-child(1) {
+  height: 40%;
+}
+
+.mini-chart span:nth-child(2) {
+  height: 60%;
+}
+
+.mini-chart span:nth-child(3) {
+  height: 30%;
+}
+
+.mini-chart span:nth-child(4) {
+  height: 80%;
+}
+
+.mini-chart span:nth-child(5) {
+  height: 100%;
+}
+
+.ads-service-benefits {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 60px;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 40px;
+}
+
+.ads-service-benefits span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.ads-service-benefits i {
+  color: var(--ads-blue-main);
+}
+
+/* ==========================================================================
+   RESULTADOS REAIS
+   ========================================================================== */
+.real-results {
+  background: var(--ads-blue-gradient-1);
+  padding: 100px 0 180px;
+  position: relative;
+}
+
+.real-results .eyebrow-text {
+  color: #8ed1fc;
+}
+
+.real-results .section-title,
+.real-results .section-subtitle {
+  color: white;
+}
+
+.real-results .section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-align: left;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  margin-top: 50px;
+}
+
+.result-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 32px 24px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.result-card:hover {
+  background: rgba(255, 255, 255, 0.06);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  border-color: rgba(38, 133, 190, 0.4);
+}
+
+.result-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--ads-blue-main), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.result-card:hover::after {
+  opacity: 1;
+}
+
+.result-title {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  margin: 0 0 16px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.result-title i {
+  color: var(--ads-text-light);
+}
+
+.result-metric {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 8px 0;
+  line-height: 1;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.result-metric.positive {
+  color: var(--ads-green);
+  text-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+}
+
+.result-metric.negative {
+  color: #ef4444;
+  /* red for cost decrease etc. wait, cost decrease is good. Let's just use green for all positive impacts */
+  text-shadow: 0 0 20px rgba(239, 68, 68, 0.3);
+}
+
+.cost-decrease {
+  color: var(--ads-green) !important;
+  text-shadow: 0 0 20px rgba(16, 185, 129, 0.3) !important;
+}
+
+.result-compare {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.result-chart-line {
+  margin-top: 24px;
+  height: 40px;
+  width: 100%;
+  position: relative;
+}
+
+.result-chart-line svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.result-chart-line path {
+  fill: none;
+  stroke: var(--ads-blue-main);
+  stroke-width: 3;
+  stroke-linecap: round;
+  filter: drop-shadow(0 4px 6px rgba(38, 133, 190, 0.5));
+}
+
+.results-footer {
+  text-align: center;
+  margin-top: 50px;
+  color: #94a3b8;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.results-footer i {
+  color: var(--ads-blue-main);
+  font-size: 1.2rem;
+}
+
+/* ==========================================================================
+   FINAL CTA SECTION
+   ========================================================================== */
+.final-cta-section {
+  padding: 0;
+  background: var(--ads-blue-gradient-1);
+  position: relative;
+  overflow: visible !important;
+  z-index: 10;
+}
+
+.final-cta-card {
+  background: white;
+  border-radius: 32px;
+  padding: 48px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+  position: relative;
+  top: -80px;
+  margin-bottom: -80px;
+}
+
+.cta-person {
+  flex-shrink: 0;
+  width: 180px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.cta-person img {
+  position: absolute;
+  bottom: -127px;
+  left: -20px;
+  width: 203px;
+  max-width: none;
+  height: auto;
+  object-fit: contain;
+  z-index: 2;
+}
+
+.cta-content {
+  flex: 1;
+}
+
+.cta-content h2 {
+  font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+  color: var(--ads-text-dark);
+  margin: 0 0 16px 0;
+  line-height: 1.2;
+}
+
+.cta-content h2 span {
+  color: var(--ads-blue-main);
+}
+
+.cta-benefits {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cta-benefits span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.cta-benefits i {
+  color: var(--ads-blue-main);
+}
+
+.cta-action .btn-large {
+  padding: 18px 36px;
+  font-size: 1.1rem;
+}
+
+.cta-icon-right {
+  flex-shrink: 0;
+  font-size: 5rem;
+  color: var(--ads-blue-main);
+  opacity: 0.8;
+  filter: drop-shadow(0 0 20px rgba(38, 133, 190, 0.4));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.ads-footer {
+  background: var(--ads-blue-gradient-1);
+  padding: 120px 0 40px;
+}
+
+.footer-copy {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.85rem;
+}
+
+.btn-outline-light {
+  border-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  background: transparent;
+  padding: 14px 28px;
+  border-radius: 999px;
+  border: 1px solid;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.btn-outline-light:hover {
+  background: white;
+  color: var(--ads-blue-gradient-1);
+}
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+@media (max-width: 991px) {
+  .ads-hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .ads-hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ads-hero-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ads-features-row {
+    justify-content: center;
+  }
+
+  .real-results .section-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .final-cta-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 24px 24px;
+    margin-top: 60px;
+  }
+
+  .cta-person {
+    width: auto;
+    height: auto;
+    justify-content: center;
+  }
+
+  .cta-person img {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin-top: -100px;
+    margin-bottom: -10px;
+    width: 180px;
+  }
+
+  .cta-benefits {
+    justify-content: center;
+  }
+
+  .cta-icon-right {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ads-services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .results-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ads-service-benefits {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+}
+
+/* Animations */
+.float-slow {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}

@@ -1,0 +1,663 @@
+/* CSS específico para a página de Desenvolvimento Web (sistemas.html) */
+
+:root {
+  --sys-blue-main: #2685be;
+  --sys-blue-gradient-1: #071b49;
+  --sys-blue-gradient-2: #0d2f75;
+  --sys-blue-gradient-3: #114ea3;
+  --sys-bg-light: #f8fbff;
+  --sys-text-dark: #1e293b;
+  --sys-text-light: #f1f5f9;
+}
+
+/* ==========================================================================
+   HEADER / NAVBAR
+   ========================================================================== */
+.header.scrolled {
+  background: linear-gradient(90deg, var(--sys-blue-gradient-1), var(--sys-blue-gradient-2));
+}
+
+.cta-sys {
+  background: #ffffff;
+  color: var(--sys-blue-main);
+  border-color: #ffffff;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.header.scrolled .cta-sys {
+  background: #ffffff;
+  color: var(--sys-blue-main);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+.sys-hero {
+  position: relative;
+  padding: 160px 0 180px;
+  background: linear-gradient(135deg, var(--sys-blue-gradient-1) 0%, var(--sys-blue-gradient-2) 50%, var(--sys-blue-gradient-3) 100%);
+  color: white;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.sys-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle at 10% 80%, rgba(38, 133, 190, 0.2) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(38, 133, 190, 0.15) 0%, transparent 40%);
+  background-size: 50px 50px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.sys-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.sys-badge {
+  display: inline-block;
+  background: rgba(38, 133, 190, 0.2);
+  backdrop-filter: blur(8px);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  border: 1px solid rgba(38, 133, 190, 0.4);
+  color: #8ed1fc;
+}
+
+.sys-hero-content h1 {
+  font-size: clamp(2.5rem, 4.5vw, 4.2rem);
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.sys-hero-content h1 span {
+  color: #8ed1fc;
+}
+
+.sys-hero-text {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 30px;
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+.sys-features-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.sys-feat {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sys-feat i {
+  color: #8ed1fc;
+  font-size: 1rem;
+}
+
+.sys-hero-mockup {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sys-mockup-container {
+  position: relative;
+  width: 100%;
+  max-width: 650px;
+}
+
+.sys-hero-img {
+  width: 100%;
+  height: auto;
+  border: none;
+  border-radius: 24px;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 0 60px rgba(38, 133, 190, 0.4));
+}
+
+.shape-fill-light {
+  fill: var(--sys-bg-light);
+}
+
+.shape-fill-darkblue {
+  fill: var(--sys-blue-gradient-1);
+}
+
+/* ==========================================================================
+   POR QUE TER UM SISTEMA?
+   ========================================================================== */
+.why-sys {
+  background-color: var(--sys-bg-light);
+  padding: 80px 0 100px;
+}
+
+.eyebrow-text {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--sys-blue-main);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 16px auto 48px;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  justify-content: center;
+}
+
+.benefit-card {
+  background: white;
+  padding: 32px 24px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.benefit-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(38, 133, 190, 0.1);
+  color: var(--sys-blue-main);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  margin: 0 auto 20px;
+}
+
+.benefit-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: var(--sys-text-dark);
+}
+
+.benefit-card p {
+  font-size: 0.9rem;
+  color: #64748b;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ==========================================================================
+   COMO POSSO AJUDAR SUA EMPRESA (TIMELINE)
+   ========================================================================== */
+.sys-timeline {
+  background-color: white;
+  padding: 100px 0 160px;
+  position: relative;
+}
+
+.timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 24px;
+  margin-top: 60px;
+  position: relative;
+}
+
+.timeline-step {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* Timeline connection lines */
+@media (min-width: 768px) {
+  .timeline-step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 35px;
+    right: -50%;
+    width: 100%;
+    height: 2px;
+    background: #e2e8f0;
+    border-top: 2px dashed #cbd5e1;
+    z-index: -1;
+  }
+}
+
+.step-icon {
+  width: 70px;
+  height: 70px;
+  background: white;
+  color: var(--sys-blue-main);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin: 0 auto 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f1f5f9;
+  position: relative;
+}
+
+.step-number {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--sys-blue-main);
+  margin-bottom: 8px;
+  display: block;
+}
+
+.timeline-step h4 {
+  font-size: 1.1rem;
+  color: var(--sys-text-dark);
+  margin: 0 0 8px 0;
+}
+
+.timeline-step p {
+  font-size: 0.85rem;
+  color: #64748b;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.sys-benefits {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 60px;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 40px;
+}
+
+.sys-benefits span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.sys-benefits i {
+  color: var(--sys-blue-main);
+}
+
+/* ==========================================================================
+   PROJETOS RECENTES
+   ========================================================================== */
+.recent-sys {
+  background: var(--sys-blue-gradient-1);
+  padding: 100px 0 180px;
+  position: relative;
+}
+
+.recent-sys .eyebrow-text {
+  color: #8ed1fc;
+}
+
+.recent-sys .section-title,
+.recent-sys .section-subtitle {
+  color: white;
+}
+
+.recent-sys .section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-align: left;
+}
+
+.sys-portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.sys-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.sys-card:hover {
+  background: rgba(255, 255, 255, 0.06);
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  border-color: rgba(38, 133, 190, 0.4);
+}
+
+.sys-card-img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  position: relative;
+}
+
+.sys-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.sys-card:hover .sys-card-img img {
+  transform: scale(1.05);
+}
+
+.sys-card-content {
+  padding: 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.sys-card-content h4 {
+  color: white;
+  margin: 0 0 8px 0;
+  font-size: 1.25rem;
+}
+
+.sys-card-content p {
+  color: #94a3b8;
+  margin: 0 0 20px 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.sys-tech {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.sys-tech span {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #8ed1fc;
+  background: rgba(38, 133, 190, 0.2);
+  padding: 4px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(38, 133, 190, 0.3);
+}
+
+/* ==========================================================================
+   FINAL CTA SECTION
+   ========================================================================== */
+.final-cta-section {
+  padding: 0;
+  background: var(--sys-blue-gradient-1);
+  position: relative;
+  overflow: visible !important;
+  z-index: 10;
+}
+
+.final-cta-card {
+  background: white;
+  border-radius: 32px;
+  padding: 48px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+  position: relative;
+  top: -80px;
+  margin-bottom: -80px;
+}
+
+.cta-person {
+  flex-shrink: 0;
+  width: 180px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.cta-person img {
+  position: absolute;
+  bottom: -127px;
+  left: -20px;
+  width: 203px;
+  max-width: none;
+  height: auto;
+  object-fit: contain;
+  z-index: 2;
+}
+
+.cta-content {
+  flex: 1;
+}
+
+.cta-content h2 {
+  font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+  color: var(--sys-text-dark);
+  margin: 0 0 16px 0;
+  line-height: 1.2;
+}
+
+.cta-content h2 span {
+  color: var(--sys-blue-main);
+}
+
+.cta-benefits {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cta-benefits span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.cta-benefits i {
+  color: var(--sys-blue-main);
+}
+
+.cta-action .btn-large {
+  padding: 18px 36px;
+  font-size: 1.1rem;
+}
+
+.cta-icon-right {
+  flex-shrink: 0;
+  font-size: 5rem;
+  color: var(--sys-blue-main);
+  opacity: 0.8;
+  filter: drop-shadow(0 0 20px rgba(38, 133, 190, 0.4));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.sys-footer {
+  background: var(--sys-blue-gradient-1);
+  padding: 120px 0 40px;
+}
+
+.footer-copy {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.85rem;
+}
+
+.btn-outline-light {
+  border-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  background: transparent;
+  padding: 14px 28px;
+  border-radius: 999px;
+  border: 1px solid;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.btn-outline-light:hover {
+  background: white;
+  color: var(--sys-blue-gradient-1);
+}
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+@media (max-width: 991px) {
+  .sys-hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .sys-hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sys-hero-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sys-features-row {
+    justify-content: center;
+  }
+
+  .recent-sys .section-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .final-cta-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 24px 24px;
+    margin-top: 60px;
+  }
+
+  .cta-person {
+    width: auto;
+    height: auto;
+    justify-content: center;
+  }
+
+  .cta-person img {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin-top: -100px;
+    margin-bottom: -10px;
+    width: 180px;
+  }
+
+  .cta-benefits {
+    justify-content: center;
+  }
+
+  .cta-icon-right {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sys-portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sys-benefits {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+}
+
+/* Animations */
+.float-slow {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}

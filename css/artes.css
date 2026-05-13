@@ -1,0 +1,614 @@
+/* CSS específico para a página de Artes Gráficas (artes.html) */
+
+:root {
+  --artes-blue-main: #2685be;
+  --artes-blue-gradient-1: #081b4b;
+  --artes-blue-gradient-2: #0d2f75;
+  --artes-blue-gradient-3: #114ea3;
+  --artes-bg-light: #f8fbff;
+  --artes-text-dark: #1e293b;
+  --artes-text-light: #f1f5f9;
+}
+
+/* ==========================================================================
+   HEADER / NAVBAR
+   ========================================================================== */
+.header.scrolled {
+  background: linear-gradient(90deg, var(--artes-blue-gradient-1), var(--artes-blue-gradient-2));
+}
+
+.cta-artes {
+  background: #ffffff;
+  color: var(--artes-blue-main);
+  border-color: #ffffff;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.header.scrolled .cta-artes {
+  background: #ffffff;
+  color: var(--artes-blue-main);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+.artes-hero {
+  position: relative;
+  padding: 160px 0 180px;
+  background: linear-gradient(135deg, var(--artes-blue-gradient-1) 0%, var(--artes-blue-gradient-2) 50%, var(--artes-blue-gradient-3) 100%);
+  color: white;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.artes-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle at 30% 70%, rgba(255, 255, 255, 0.05) 0%, transparent 40%),
+    radial-gradient(circle at 70% 30%, rgba(38, 133, 190, 0.15) 0%, transparent 40%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.artes-hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.artes-badge {
+  display: inline-block;
+  background: rgba(38, 133, 190, 0.2);
+  backdrop-filter: blur(8px);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  border: 1px solid rgba(38, 133, 190, 0.4);
+  color: #8ed1fc;
+}
+
+.artes-hero-content h1 {
+  font-size: clamp(2.5rem, 4vw, 3.8rem);
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.artes-hero-content h1 span {
+  color: #8ed1fc;
+}
+
+.artes-hero-text {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 30px;
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+.artes-features-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.art-feat {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.art-feat i {
+  color: #8ed1fc;
+  font-size: 1rem;
+}
+
+.artes-hero-mockup {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.artes-mockup-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+}
+
+.art-hero-img {
+  width: 100%;
+  height: auto;
+  border: none;
+  border-radius: 24px;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 0 50px rgba(38, 133, 190, 0.6));
+}
+
+.shape-fill-light {
+  fill: var(--artes-bg-light);
+}
+
+.shape-fill-darkblue {
+  fill: var(--artes-blue-gradient-1);
+}
+
+/* ==========================================================================
+   POR QUE INVESTIR EM ARTES PROFISSIONAIS?
+   ========================================================================== */
+.why-artes {
+  background-color: var(--artes-bg-light);
+  padding: 80px 0 100px;
+}
+
+.eyebrow-text {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--artes-blue-main);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 16px auto 48px;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  justify-content: center;
+}
+
+.benefit-card {
+  background: white;
+  padding: 32px 24px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.benefit-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(38, 133, 190, 0.1);
+  color: var(--artes-blue-main);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  margin: 0 auto 20px;
+}
+
+.benefit-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: var(--artes-text-dark);
+}
+
+.benefit-card p {
+  font-size: 0.9rem;
+  color: #64748b;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ==========================================================================
+   O QUE EU CRIO PARA VOCÊ
+   ========================================================================== */
+.what-i-create {
+  background-color: white;
+  padding: 100px 0 160px;
+  position: relative;
+}
+
+.showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  margin-top: 50px;
+}
+
+.showcase-card {
+  background: var(--artes-bg-light);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0,0,0,0.03);
+  text-align: center;
+  padding-bottom: 24px;
+}
+
+.showcase-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.08);
+}
+
+.showcase-img-wrap {
+  width: 100%;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+  background: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.showcase-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.showcase-card:hover .showcase-img-wrap img {
+  transform: scale(1.05);
+}
+
+.showcase-card h4 {
+  font-size: 1.15rem;
+  color: var(--artes-text-dark);
+  margin: 0 0 8px 0;
+  padding: 0 20px;
+}
+
+.showcase-benefits {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 60px;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 40px;
+}
+
+.showcase-benefits span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.showcase-benefits i {
+  color: var(--artes-blue-main);
+}
+
+/* ==========================================================================
+   TRABALHOS RECENTES
+   ========================================================================== */
+.recent-artes {
+  background: var(--artes-blue-gradient-1);
+  padding: 100px 0 180px;
+  position: relative;
+}
+
+.recent-artes .eyebrow-text {
+  color: #8ed1fc;
+}
+
+.recent-artes .section-title,
+.recent-artes .section-subtitle {
+  color: white;
+}
+
+.artes-portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.art-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  aspect-ratio: 1/1;
+  display: block;
+}
+
+.art-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease, filter 0.3s ease;
+}
+
+.art-card:hover img {
+  transform: scale(1.08);
+  filter: brightness(0.7);
+}
+
+.art-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 24px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.art-card:hover .art-card-overlay {
+  opacity: 1;
+}
+
+.art-card-overlay h4 {
+  color: white;
+  margin: 0 0 4px 0;
+  font-size: 1.2rem;
+  transform: translateY(10px);
+  transition: transform 0.3s ease;
+}
+
+.art-card-overlay p {
+  color: #8ed1fc;
+  margin: 0;
+  font-size: 0.9rem;
+  transform: translateY(10px);
+  transition: transform 0.3s ease 0.1s;
+}
+
+.art-card:hover .art-card-overlay h4,
+.art-card:hover .art-card-overlay p {
+  transform: translateY(0);
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.btn-outline-light {
+  border-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  background: transparent;
+  padding: 14px 28px;
+  border-radius: 999px;
+  border: 1px solid;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.btn-outline-light:hover {
+  background: white;
+  color: var(--artes-blue-gradient-1);
+}
+
+/* ==========================================================================
+   FINAL CTA SECTION
+   ========================================================================== */
+.final-cta-section {
+  padding: 0;
+  background: var(--artes-blue-gradient-1);
+  position: relative;
+  overflow: visible !important;
+  z-index: 10;
+}
+
+.final-cta-card {
+  background: white;
+  border-radius: 32px;
+  padding: 48px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+  position: relative;
+  top: -80px;
+  margin-bottom: -80px;
+}
+
+.cta-person {
+  flex-shrink: 0;
+  width: 180px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.cta-person img {
+  position: absolute;
+  bottom: -127px;
+  left: -20px;
+  width: 203px;
+  max-width: none;
+  height: auto;
+  object-fit: contain;
+  z-index: 2;
+}
+
+.cta-content {
+  flex: 1;
+}
+
+.cta-content h2 {
+  font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+  color: var(--artes-text-dark);
+  margin: 0 0 16px 0;
+  line-height: 1.2;
+}
+
+.cta-content h2 span {
+  color: var(--artes-blue-main);
+}
+
+.cta-benefits {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cta-benefits span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.cta-benefits i {
+  color: var(--artes-blue-main);
+}
+
+.cta-action .btn-large {
+  padding: 18px 36px;
+  font-size: 1.1rem;
+}
+
+.cta-icon-right {
+  flex-shrink: 0;
+  font-size: 5rem;
+  color: var(--artes-blue-main);
+  opacity: 0.8;
+  filter: drop-shadow(0 0 20px rgba(38,133,190,0.4));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.artes-footer {
+  background: var(--artes-blue-gradient-1);
+  padding: 120px 0 40px;
+}
+
+.footer-copy {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.85rem;
+}
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+@media (max-width: 991px) {
+  .artes-hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .artes-hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .artes-hero-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .artes-features-row {
+    justify-content: center;
+  }
+
+  .final-cta-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 24px 24px;
+    margin-top: 60px;
+  }
+
+  .cta-person {
+    width: auto;
+    height: auto;
+    justify-content: center;
+  }
+
+  .cta-person img {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin-top: -100px;
+    margin-bottom: -10px;
+    width: 180px;
+  }
+
+  .cta-benefits {
+    justify-content: center;
+  }
+
+  .cta-icon-right {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .showcase-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .artes-portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .showcase-benefits {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+}
+
+/* Animations */
+.float-slow {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Google Ads | Pedro Neto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/ads.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="index.html"><img src="img/pnlogo.png" width="50px" alt="Logo"></a>
+      <nav class="menu">
+        <a href="index.html#home">Home</a>
+        <div class="menu-item-has-children">
+          <a href="index.html#solucoes" aria-haspopup="true" aria-expanded="false" class="menu-trigger">Soluções <i
+              class="fa-solid fa-chevron-down"></i></a>
+          <div class="mega-menu">
+            <div class="mega-menu-container">
+              <div class="mega-column">
+                <h4 class="mega-title">Atrair Clientes</h4>
+                <a href="ads.html" class="mega-link">
+                  <div class="mega-icon"><i class="fa-solid fa-bullhorn"></i></div>
+                  <div class="mega-text">
+                    <span class="mega-name">Google Ads</span>
+                    <span class="mega-desc">Gestão de tráfego pago e campanhas para gerar leads e vendas</span>
+                  </div>
+                </a>
+              </div>
+              <div class="mega-column">
+                <h4 class="mega-title">Ter Presença Online</h4>
+                <a href="sites.html" class="mega-link">
+                  <div class="mega-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                  <div class="mega-text">
+                    <span class="mega-name">Sites</span>
+                    <span class="mega-desc">Criação de sites profissionais, rápidos e responsivos</span>
+                  </div>
+                </a>
+              </div>
+              <div class="mega-column">
+                <h4 class="mega-title">Criar Conteúdo</h4>
+                <a href="videos.html" class="mega-link">
+                  <div class="mega-icon"><i class="fa-solid fa-video"></i></div>
+                  <div class="mega-text">
+                    <span class="mega-name">Vídeos</span>
+                    <span class="mega-desc">Produção e edição de vídeos para atrair e engajar</span>
+                  </div>
+                </a>
+                <a href="artes.html" class="mega-link">
+                  <div class="mega-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                  <div class="mega-text">
+                    <span class="mega-name">Artes Gráficas</span>
+                    <span class="mega-desc">Design para redes sociais e identidade visual</span>
+                  </div>
+                </a>
+              </div>
+              <div class="mega-column">
+                <h4 class="mega-title">Escalar o Negócio</h4>
+                <a href="index.html#sistemas" class="mega-link">
+                  <div class="mega-icon"><i class="fa-solid fa-cogs"></i></div>
+                  <div class="mega-text">
+                    <span class="mega-name">Sistemas</span>
+                    <span class="mega-desc">Desenvolvimento de sistemas para otimizar processos</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="index.html#portfolio">Portfólio</a>
+        <a href="index.html#sobre">Sobre mim</a>
+        <a href="index.html#contato">Contato</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a href="https://wa.me/5511992075991" class="btn btn-outline desktop-cta cta-ads">Vamos conversar</a>
+    </div>
+  </header>
+
+  <div class="mobile-overlay" aria-hidden="true"></div>
+  <aside id="mobile-menu" class="mobile-menu" aria-hidden="true">
+    <button class="mobile-close" aria-label="Close menu">✕</button>
+    <nav class="mobile-nav">
+      <a href="index.html#home">Home</a>
+      <div class="mobile-menu-item-has-children">
+        <button class="mobile-menu-trigger" aria-expanded="false" aria-controls="mobile-mega-menu">Soluções <i
+            class="fa-solid fa-chevron-down"></i></button>
+        <div class="mobile-mega-menu" id="mobile-mega-menu">
+          <div class="mobile-mega-column">
+            <h4 class="mobile-mega-title">Atrair Clientes</h4>
+            <a href="ads.html" class="mobile-mega-link">
+              <div class="mega-icon"><i class="fa-solid fa-bullhorn"></i></div>
+              <div class="mega-text">
+                <span class="mega-name">Google Ads</span>
+                <span class="mega-desc">Gestão de tráfego pago</span>
+              </div>
+            </a>
+          </div>
+          <div class="mobile-mega-column">
+            <h4 class="mobile-mega-title">Ter Presença Online</h4>
+            <a href="sites.html" class="mobile-mega-link">
+              <div class="mega-icon"><i class="fa-solid fa-laptop-code"></i></div>
+              <div class="mega-text">
+                <span class="mega-name">Sites</span>
+                <span class="mega-desc">Criação de sites</span>
+              </div>
+            </a>
+          </div>
+          <div class="mobile-mega-column">
+            <h4 class="mobile-mega-title">Criar Conteúdo</h4>
+            <a href="videos.html" class="mobile-mega-link">
+              <div class="mega-icon"><i class="fa-solid fa-video"></i></div>
+              <div class="mega-text">
+                <span class="mega-name">Vídeos</span>
+                <span class="mega-desc">Produção e edição de vídeos</span>
+              </div>
+            </a>
+            <a href="artes.html" class="mobile-mega-link">
+              <div class="mega-icon"><i class="fa-solid fa-pen-nib"></i></div>
+              <div class="mega-text">
+                <span class="mega-name">Artes Gráficas</span>
+                <span class="mega-desc">Design para redes sociais</span>
+              </div>
+            </a>
+          </div>
+          <div class="mobile-mega-column">
+            <h4 class="mobile-mega-title">Escalar o Negócio</h4>
+            <a href="index.html#sistemas" class="mobile-mega-link">
+              <div class="mega-icon"><i class="fa-solid fa-cogs"></i></div>
+              <div class="mega-text">
+                <span class="mega-name">Sistemas</span>
+                <span class="mega-desc">Desenvolvimento de sistemas</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <a href="index.html#portfolio">Portfólio</a>
+      <a href="index.html#sobre">Sobre mim</a>
+      <a href="index.html#contato">Contato</a>
+    </nav>
+    <a href="https://wa.me/5511992075991" class="btn btn-outline mobile-menu-cta">Vamos conversar</a>
+  </aside>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="section ads-hero reveal">
+      <div class="container ads-hero-grid">
+        <div class="ads-hero-content">
+          <div class="ads-badge">GOOGLE ADS</div>
+          <h1>Mais cliques. Mais clientes. <span>Mais resultados.</span></h1>
+          <p class="ads-hero-text">
+            Campanhas estratégicas no Google para atrair o público certo, na hora certa, e aumentar as vendas do seu
+            negócio de forma escalável.
+          </p>
+
+          <div class="ads-features-row">
+            <div class="ads-feat"><i class="fa-brands fa-google"></i> Especialista Google Ads</div>
+            <div class="ads-feat"><i class="fa-solid fa-bullseye"></i> Foco em resultado</div>
+            <div class="ads-feat"><i class="fa-solid fa-chess-knight"></i> Gestão estratégica</div>
+            <div class="ads-feat"><i class="fa-solid fa-chart-simple"></i> Relatórios transparentes</div>
+          </div>
+
+          <div class="ads-hero-actions">
+            <a href="#contato" class="btn btn-primary ads-cta">Aumentar minhas vendas <i
+                class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="ads-hero-mockup">
+          <div class="ads-mockup-container">
+            <img src="img/ads-hero.png" alt="Google Ads Gestão de Campanhas" class="ads-hero-img float-slow" />
+          </div>
+        </div>
+      </div>
+
+      <div class="custom-shape-divider-bottom sites-hero-divider">
+        <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+          <path class="shape-fill-light"
+            d="M0,224L48,229.3C96,235,192,245,288,224C384,203,480,149,576,144C672,139,768,181,864,197.3C960,213,1056,203,1152,181.3C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+          </path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- POR QUE INVESTIR EM GOOGLE ADS? -->
+    <section class="section why-ads reveal">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="eyebrow-text">POR QUE INVESTIR EM GOOGLE ADS?</span>
+          <h2 class="section-title">Resultados que fazem a <span>diferença</span></h2>
+          <p class="section-subtitle">Apareça para quem já está buscando pelo seu produto ou serviço e transforme
+            intenção de busca em vendas diretas.</p>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="benefit-card hover-lift">
+            <div class="benefit-icon"><i class="fa-solid fa-users-viewfinder"></i></div>
+            <h3>Atrair o público certo</h3>
+            <p>Seus anúncios aparecem exatamente para quem está pesquisando pelo que você oferece, no momento exato.</p>
+          </div>
+          <div class="benefit-card hover-lift">
+            <div class="benefit-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+            <h3>Mais conversões</h3>
+            <p>Campanhas otimizadas com foco absoluto em gerar contatos qualificados e vendas reais.</p>
+          </div>
+          <div class="benefit-card hover-lift">
+            <div class="benefit-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+            <h3>Retorno sobre investimento</h3>
+            <p>Estratégias inteligentes que focam em maximizar o ROI, reduzindo custos desnecessários e escalando o
+              lucro.</p>
+          </div>
+          <div class="benefit-card hover-lift">
+            <div class="benefit-icon"><i class="fa-solid fa-chart-pie"></i></div>
+            <h3>Mensuração completa</h3>
+            <p>Relatórios detalhados para você entender exatamente de onde vem cada venda e quanto custou cada cliente.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMO POSSO AJUDAR SEU NEGÓCIO -->
+    <section class="section how-i-help reveal">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="eyebrow-text">COMO POSSO AJUDAR SEU NEGÓCIO</span>
+          <h2 class="section-title">Soluções completas para suas <span>campanhas</span></h2>
+          <p class="section-subtitle">Uma gestão ponta a ponta focada na performance, desde o planejamento estratégico
+            até a otimização diária dos anúncios.</p>
+        </div>
+
+        <div class="ads-services-grid">
+          <div class="ads-service-card">
+            <div class="ads-service-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <h4>Pesquisa de Palavras-chave</h4>
+            <p>Encontramos os termos exatos que seus clientes usam para buscar seus serviços, focando nas palavras com
+              maior intenção de compra.</p>
+            <div class="mini-analytics">
+              <span>Buscas otimizadas</span>
+              <div class="mini-chart">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="ads-service-card">
+            <div class="ads-service-icon"><i class="fa-solid fa-file-pen"></i></div>
+            <h4>Criação de Anúncios</h4>
+            <p>Desenvolvemos textos persuasivos (copywriting) e estruturamos campanhas focadas em gerar altas taxas de
+              clique (CTR).</p>
+            <div class="mini-analytics">
+              <span>CTR Elevado</span>
+              <div class="mini-chart">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="ads-service-card">
+            <div class="ads-service-icon"><i class="fa-solid fa-sliders"></i></div>
+            <h4>Gestão de Campanhas</h4>
+            <p>Acompanhamento e otimização contínua da sua conta, ajustando lances e estratégias para garantir o menor
+              custo por clique (CPC).</p>
+            <div class="mini-analytics">
+              <span>ROI Maximizado</span>
+              <div class="mini-chart">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="ads-service-card">
+            <div class="ads-service-icon"><i class="fa-solid fa-rotate"></i></div>
+            <h4>Remarketing</h4>
+            <p>Impacte novamente as pessoas que já visitaram seu site mas não compraram, aumentando drasticamente as
+              taxas de conversão.</p>
+            <div class="mini-analytics">
+              <span>Recuperação de Vendas</span>
+              <div class="mini-chart">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="ads-service-card">
+            <div class="ads-service-icon"><i class="fa-solid fa-puzzle-piece"></i></div>
+            <h4>Extensões de Anúncio</h4>
+            <p>Configuração de recursos extras como links, telefone e local, garantindo maior destaque e confiança na
+              página de busca.</p>
+            <div class="mini-analytics">
+              <span>Maior Destaque</span>
+              <div class="mini-chart">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="ads-service-card">
+            <div class="ads-service-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <h4>Relatórios e Insights</h4>
+            <p>Fornecemos relatórios claros e fáceis de entender, para que você tenha visibilidade total de onde seu
+              dinheiro está sendo investido.</p>
+            <div class="mini-analytics">
+              <span>Transparência de Dados</span>
+              <div class="mini-chart">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ads-service-benefits">
+          <span><i class="fa-solid fa-check-circle"></i> Estratégias personalizadas</span>
+          <span><i class="fa-solid fa-check-circle"></i> Acompanhamento diário</span>
+          <span><i class="fa-solid fa-check-circle"></i> Transparência total</span>
+          <span><i class="fa-solid fa-check-circle"></i> Foco em resultados reais</span>
+        </div>
+      </div>
+
+      <div class="custom-shape-divider-bottom portfolio-divider">
+        <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+          <path class="shape-fill-darkblue"
+            d="M0,160L48,170.7C96,181,192,203,288,192C384,181,480,139,576,144C672,149,768,203,864,224C960,245,1056,235,1152,208C1248,181,1344,139,1392,117.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+          </path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- RESULTADOS REAIS -->
+    <section class="section real-results reveal">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow-text">RESULTADOS QUE FALAM POR SI</span>
+            <h2 class="section-title">Resultados reais de campanhas <span>reais</span></h2>
+          </div>
+          <a href="#contato" class="btn btn-primary" style="border-radius: 999px;">Ver mais resultados <i
+              class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="results-grid">
+          <div class="result-card">
+            <h4 class="result-title"><i class="fa-solid fa-hand-pointer"></i> Cliques</h4>
+            <div class="result-metric">+3.427</div>
+            <div class="result-compare">vs. período anterior</div>
+            <div class="result-chart-line">
+              <svg preserveAspectRatio="none" viewBox="0 0 100 40">
+                <path d="M0,30 L20,25 L40,35 L60,15 L80,20 L100,5" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="result-card">
+            <h4 class="result-title"><i class="fa-solid fa-bullseye"></i> Conversões</h4>
+            <div class="result-metric positive">+157%</div>
+            <div class="result-compare">vs. período anterior</div>
+            <div class="result-chart-line">
+              <svg preserveAspectRatio="none" viewBox="0 0 100 40">
+                <path d="M0,35 L20,30 L40,25 L60,15 L80,10 L100,0" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="result-card">
+            <h4 class="result-title"><i class="fa-solid fa-money-bill-wave"></i> Custo por Conversão</h4>
+            <div class="result-metric negative">-32%</div>
+            <div class="result-compare">vs. período anterior</div>
+            <div class="result-chart-line">
+              <svg preserveAspectRatio="none" viewBox="0 0 100 40">
+                <path d="M0,10 L20,15 L40,10 L60,25 L80,30 L100,35" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="result-card">
+            <h4 class="result-title"><i class="fa-solid fa-percent"></i> Taxa de Conversão</h4>
+            <div class="result-metric positive">+85%</div>
+            <div class="result-compare">vs. período anterior</div>
+            <div class="result-chart-line">
+              <svg preserveAspectRatio="none" viewBox="0 0 100 40">
+                <path d="M0,30 L20,35 L40,20 L60,25 L80,10 L100,5" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="result-card">
+            <h4 class="result-title"><i class="fa-regular fa-eye"></i> Impressões</h4>
+            <div class="result-metric">+278%</div>
+            <div class="result-compare">vs. período anterior</div>
+            <div class="result-chart-line">
+              <svg preserveAspectRatio="none" viewBox="0 0 100 40">
+                <path d="M0,35 L20,25 L40,30 L60,15 L80,20 L100,5" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="result-card">
+            <h4 class="result-title"><i class="fa-solid fa-sack-dollar"></i> ROI</h4>
+            <div class="result-metric positive">+212%</div>
+            <div class="result-compare">vs. período anterior</div>
+            <div class="result-chart-line">
+              <svg preserveAspectRatio="none" viewBox="0 0 100 40">
+                <path d="M0,40 L20,35 L40,25 L60,15 L80,20 L100,0" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="results-footer">
+          <i class="fa-brands fa-google"></i> Estratégia, gestão e otimização contínua para transformar cliques em
+          clientes.
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA SECTION -->
+    <section class="section final-cta-section reveal">
+      <div class="container">
+        <div class="final-cta-card">
+          <div class="cta-person">
+            <img src="img/pn.png" alt="Pedro Neto">
+          </div>
+          <div class="cta-content">
+            <h2>Pronto para atrair mais clientes e <span>aumentar suas vendas?</span></h2>
+            <p style="color: #64748b; margin-bottom: 24px; font-size: 1.05rem;">Vamos estruturar campanhas estratégicas
+              que posicionam sua marca no topo do Google, exatamente onde seus clientes estão.</p>
+            <div class="cta-benefits">
+              <span><i class="fa-solid fa-check-circle"></i> Atendimento rápido</span>
+              <span><i class="fa-solid fa-check-circle"></i> Orçamento sem compromisso</span>
+              <span><i class="fa-solid fa-check-circle"></i> Estratégias personalizadas</span>
+            </div>
+            <div class="cta-action" style="margin-top: 32px;">
+              <a href="https://wa.me/5511992075991" class="btn btn-primary btn-large ads-cta" style="border:none">Quero
+                um orçamento gratuito <i class="fa-solid fa-paper-plane" style="margin-left: 8px;"></i></a>
+            </div>
+          </div>
+          <div class="cta-icon-right">
+            <i class="fa-solid fa-bullseye"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer ads-footer">
+    <div class="container footer-row">
+      <a class="logo" href="index.html"><img src="img/pnlogo.png" width="50px" alt="Logo"></a>
+      <div class="footer-links">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#solucoes">Soluções</a>
+        <a href="index.html#portfolio">Portfólio</a>
+        <a href="index.html#contato">Contato</a>
+      </div>
+      <div class="socials">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+    <div class="container text-center footer-copy">
+      <p>&copy; 2024 Pedro Neto. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5511992075991" class="whatsapp-btn" target="_blank" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M12 2a9.94 9.94 0 0 0-8.64 14.9L2 22l5.26-1.38A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.12.82.84-3.03-.2-.31A8.2 8.2 0 1 1 12 20.2Zm4.56-6.09c-.25-.13-1.48-.73-1.71-.81-.23-.08-.39-.12-.56.12-.17.25-.65.81-.79.98-.15.17-.29.19-.54.06-.25-.13-1.06-.39-2.01-1.25-.74-.66-1.24-1.48-1.39-1.73-.15-.25-.02-.39.11-.52.12-.12.25-.31.37-.46.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.23.9 2.43 1.03 2.6.13.17 1.76 2.69 4.26 3.77 2.51 1.08 2.51.72 2.97.68.46-.04 1.48-.6 1.69-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.31Z" />
+    </svg>
+  </a>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

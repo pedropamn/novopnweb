@@ -1,51 +1,50 @@
-/* CSS específico para a página de Criação de Sites (sites.html) */
+/* CSS específico para a página de Vídeos Promocionais (videos.html) */
 
 /* Cores Base para esta landing page */
 :root {
-  --site-blue-main: #2685be;
-  --site-blue-gradient-1: #0b2f6b;
-  --site-blue-gradient-2: #114ea3;
-  --site-blue-gradient-3: #1e73d8;
-  --site-bg-light: #f8fbff;
-  --site-text-dark: #1e293b;
-  --site-text-light: #f1f5f9;
+  --video-blue-main: #2685be;
+  --video-blue-gradient-1: #081b4b;
+  --video-blue-gradient-2: #0d2f75;
+  --video-blue-gradient-3: #114ea3;
+  --video-bg-light: #f8fbff;
+  --video-text-dark: #1e293b;
+  --video-text-light: #f1f5f9;
 }
 
 /* ==========================================================================
    HEADER / NAVBAR
    ========================================================================== */
 .header.scrolled {
-  background: linear-gradient(90deg, var(--site-blue-gradient-1), var(--site-blue-gradient-2));
+  background: linear-gradient(90deg, var(--video-blue-gradient-1), var(--video-blue-gradient-2));
 }
 
-.cta-sites {
+.cta-videos {
   background: #ffffff;
-  color: var(--site-blue-main);
+  color: var(--video-blue-main);
   border-color: #ffffff;
   border-radius: 999px;
   font-weight: 600;
 }
 
-.header.scrolled .cta-sites {
+.header.scrolled .cta-videos {
   background: #ffffff;
-  color: var(--site-blue-main);
+  color: var(--video-blue-main);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* ==========================================================================
    HERO SECTION
    ========================================================================== */
-.sites-hero {
+.videos-hero {
   position: relative;
   padding: 160px 0 180px;
-  background: linear-gradient(135deg, var(--site-blue-gradient-1) 0%, var(--site-blue-gradient-2) 50%, var(--site-blue-gradient-3) 100%);
+  background: linear-gradient(135deg, var(--video-blue-gradient-1) 0%, var(--video-blue-gradient-2) 50%, var(--video-blue-gradient-3) 100%);
   color: white;
   overflow: hidden;
   z-index: 1;
 }
 
-/* Overlay sutil de pattern (opcional) */
-.sites-hero::before {
+.videos-hero::before {
   content: "";
   position: absolute;
   top: 0;
@@ -58,16 +57,16 @@
   pointer-events: none;
 }
 
-.sites-hero-grid {
+.videos-hero-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   align-items: center;
 }
 
-.sites-badge {
+.videos-badge {
   display: inline-block;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(38, 133, 190, 0.2);
   backdrop-filter: blur(8px);
   padding: 6px 16px;
   border-radius: 20px;
@@ -76,22 +75,22 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-bottom: 24px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(38, 133, 190, 0.4);
+  color: #8ed1fc;
 }
 
-.sites-hero-content h1 {
+.videos-hero-content h1 {
   font-size: clamp(2.5rem, 4vw, 3.8rem);
   line-height: 1.1;
   margin-bottom: 20px;
   color: white;
 }
 
-.sites-hero-content h1 span {
+.videos-hero-content h1 span {
   color: #8ed1fc;
-  /* Tom claro de azul para destaque */
 }
 
-.sites-hero-text {
+.videos-hero-text {
   font-size: 1.1rem;
   color: rgba(255, 255, 255, 0.85);
   margin-bottom: 30px;
@@ -99,35 +98,38 @@
   line-height: 1.6;
 }
 
-.sites-features-row {
+.videos-features-row {
   display: flex;
-  gap: 24px;
+  gap: 16px;
   margin-bottom: 40px;
   flex-wrap: wrap;
 }
 
-.site-feat {
+.video-feat {
   display: flex;
   align-items: center;
   gap: 8px;
   font-size: 0.9rem;
   font-weight: 500;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.site-feat i {
+.video-feat i {
   color: #8ed1fc;
-  font-size: 1.1rem;
 }
 
-.sites-hero-actions {
+.videos-hero-actions {
   display: flex;
   align-items: center;
   gap: 24px;
   flex-wrap: wrap;
 }
 
-.sites-cta {
-  background: var(--site-blue-main);
+.videos-cta {
+  background: var(--video-blue-main);
   color: white;
   padding: 16px 32px;
   font-size: 1.05rem;
@@ -135,69 +137,77 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   display: inline-flex;
   gap: 10px;
+  border: none;
+  font-weight: 600;
 }
 
-.sites-cta:hover {
+.videos-cta:hover {
   background: #2076ab;
   transform: translateY(-2px);
   box-shadow: 0 14px 25px rgba(0, 0, 0, 0.25);
+  color: white;
 }
 
-.sites-hero-actions .social-links {
-  display: flex;
-  gap: 12px;
-}
-
-.sites-hero-mockup {
+.videos-hero-mockup {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.mockup-container {
+.videos-mockup-container {
   position: relative;
   width: 100%;
   max-width: 600px;
 }
 
-.laptop-img {
+.camera-img {
   width: 100%;
   height: auto;
   border: none;
-  /*box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);*/
-  transition: all 0.3s ease;
-}
-
-.phone-img {
-  position: absolute;
-  right: -5%;
-  bottom: -10%;
-  width: 30%;
-  height: auto;
   border-radius: 24px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-  border: 4px solid #1e293b;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 0 40px rgba(38, 133, 190, 0.5));
 }
 
-/* Divider do hero para a section light */
+.floating-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background: rgba(38, 133, 190, 0.8);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0 30px rgba(38, 133, 190, 0.6);
+  animation: pulse-glow 2s infinite;
+}
+
+@keyframes pulse-glow {
+  0% { box-shadow: 0 0 0 0 rgba(38, 133, 190, 0.6); }
+  70% { box-shadow: 0 0 0 20px rgba(38, 133, 190, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(38, 133, 190, 0); }
+}
+
 .shape-fill-light {
-  fill: var(--site-bg-light);
+  fill: var(--video-bg-light);
 }
 
-/* ==========================================================================
-   POR QUE TER UM SITE?
-   ========================================================================== */
-.why-site {
-  background-color: var(--site-bg-light);
-  padding: 80px 0 100px;
+.shape-fill-darkblue {
+  fill: var(--video-blue-gradient-1);
 }
 
 .eyebrow-text {
   display: inline-block;
   font-size: 0.8rem;
   font-weight: 700;
-  color: var(--site-blue-main);
+  color: var(--video-blue-main);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: 12px;
@@ -212,6 +222,14 @@
   color: #64748b;
   max-width: 600px;
   margin: 16px auto 48px;
+}
+
+/* ==========================================================================
+   VANTAGENS DE CRIAR VÍDEOS
+   ========================================================================== */
+.why-video {
+  background-color: var(--video-bg-light);
+  padding: 80px 0 100px;
 }
 
 .benefits-grid {
@@ -240,7 +258,7 @@
   width: 60px;
   height: 60px;
   background: rgba(38, 133, 190, 0.1);
-  color: var(--site-blue-main);
+  color: var(--video-blue-main);
   border-radius: 16px;
   display: flex;
   align-items: center;
@@ -252,7 +270,7 @@
 .benefit-card h3 {
   font-size: 1.1rem;
   margin-bottom: 12px;
-  color: var(--site-text-dark);
+  color: var(--video-text-dark);
 }
 
 .benefit-card p {
@@ -263,210 +281,257 @@
 }
 
 /* ==========================================================================
-   MID HERO LOTTIE BANNER
+   TIPOS DE VÍDEOS (TABS)
    ========================================================================== */
-.mid-hero {
-  background: white;
-  padding: 40px 0 60px;
+.video-types {
+  background-color: white;
+  padding: 100px 0;
+  overflow: visible !important;
 }
 
-.mid-hero-banner {
-  background: linear-gradient(135deg, var(--site-blue-gradient-1), var(--site-blue-gradient-3));
+.video-tabs-nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 76px;
+  z-index: 50;
+  background: white;
+  padding: 16px 0;
+}
+
+.video-tab-btn {
+  background: #f1f5f9;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--video-text-dark);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.video-tab-btn:hover {
+  background: #e2e8f0;
+}
+
+.video-tab-btn.active {
+  background: var(--video-blue-main);
+  color: white;
+  box-shadow: 0 10px 20px rgba(38, 133, 190, 0.3);
+}
+
+.video-tab-content {
+  display: block;
+  margin-bottom: 64px;
+}
+
+.video-tab-content:last-child {
+  margin-bottom: 0;
+}
+
+.video-type-card {
+  background: var(--video-bg-light);
   border-radius: 32px;
-  padding: 60px;
+  padding: 48px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 48px;
   align-items: center;
-  box-shadow: 0 25px 50px rgba(11, 47, 107, 0.15);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0,0,0,0.02);
+}
+
+.video-type-mockup {
   position: relative;
+  border-radius: 24px;
   overflow: hidden;
-}
-
-.mid-hero-banner::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  right: -10%;
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
-  border-radius: 50%;
-  pointer-events: none;
-}
-
-.mid-hero-content h2 {
-  color: white;
-  font-size: clamp(2rem, 3vw, 2.6rem);
-  margin: 0 0 16px 0;
-  line-height: 1.2;
-}
-
-.mid-hero-content h2 span {
-  color: #8ed1fc;
-}
-
-.mid-hero-content p {
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin: 0 0 32px 0;
-  max-width: 450px;
-}
-
-.mt-20 {
-  margin-top: 20px;
-}
-
-/* ==========================================================================
-   TUDO QUE SEU SITE PRECISA
-   ========================================================================== */
-.everything-needed {
-  background: white;
-  padding: 100px 0 160px;
-  position: relative;
-}
-
-.features-grid-minimal {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 32px 40px;
-  margin-top: 50px;
-}
-
-.feature-item {
-  display: flex;
-  gap: 16px;
-  align-items: flex-start;
-}
-
-.feat-icon-small {
-  width: 48px;
-  height: 48px;
-  background: var(--site-bg-light);
-  color: var(--site-blue-main);
-  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  background: #1e293b;
+  aspect-ratio: 16/9;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
-  flex-shrink: 0;
 }
 
-.feat-content h4 {
-  margin: 0 0 8px 0;
+.video-type-mockup img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.video-type-mockup:hover img {
+  opacity: 0.6;
+}
+
+.play-overlay {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--video-blue-main);
+  font-size: 1.5rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.video-type-mockup:hover .play-overlay {
+  transform: scale(1.1);
+}
+
+.video-type-info h3 {
+  font-size: 2rem;
+  color: var(--video-text-dark);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.video-type-info h3 i {
+  color: var(--video-blue-main);
+}
+
+.video-type-info p {
   font-size: 1.05rem;
-  color: var(--site-text-dark);
-}
-
-.feat-content p {
-  margin: 0;
-  font-size: 0.9rem;
   color: #64748b;
-  line-height: 1.5;
+  line-height: 1.6;
+  margin-bottom: 24px;
 }
 
-/* Divider para o portfolio */
-.shape-fill-darkblue {
-  fill: var(--site-blue-gradient-1);
+.video-type-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.video-type-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  color: var(--video-text-dark);
+  font-weight: 500;
+}
+
+.video-type-list li i {
+  color: var(--video-blue-main);
 }
 
 /* ==========================================================================
-   PORTFOLIO SECTION
+   TRABALHOS RECENTES
    ========================================================================== */
-.sites-portfolio {
-  background: var(--site-blue-gradient-1);
+.recent-work {
+  background: var(--video-blue-gradient-1);
   padding: 100px 0 180px;
   position: relative;
 }
 
-.light-text .section-title,
-.light-text .section-subtitle {
-  color: white;
-}
-
-.light-text .eyebrow-text {
+.recent-work .eyebrow-text {
   color: #8ed1fc;
 }
 
-.sites-portfolio-grid {
+.recent-work .section-title,
+.recent-work .section-subtitle {
+  color: white;
+}
+
+.video-portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
   margin-top: 50px;
 }
 
-.site-card {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 20px;
+.video-card {
+  position: relative;
+  border-radius: 24px;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: all 0.3s ease;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  background: #1e293b;
+  aspect-ratio: 16/9;
   display: block;
 }
 
-.site-card:hover {
-  transform: translateY(-8px);
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-}
-
-.site-card-img {
-  position: relative;
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-}
-
-.site-card-img img {
+.video-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, opacity 0.3s ease;
+  opacity: 0.8;
 }
 
-.site-card:hover .site-card-img img {
+.video-card:hover img {
   transform: scale(1.05);
+  opacity: 0.5;
 }
 
-.site-card-overlay {
+.video-card-content {
   position: absolute;
-  top: 16px;
-  right: 16px;
-  width: 40px;
-  height: 40px;
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(4px);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 24px;
+  background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+  color: white;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.video-card:hover .video-card-content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.video-card-content h4 {
+  margin: 0 0 4px 0;
+  font-size: 1.2rem;
+}
+
+.video-card-content p {
+  margin: 0;
+  color: #8ed1fc;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.video-card .play-icon-small {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  width: 50px;
+  height: 50px;
+  background: var(--video-blue-main);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
+  font-size: 1.2rem;
   opacity: 0;
-  transform: scale(0.8);
   transition: all 0.3s ease;
 }
 
-.site-card:hover .site-card-overlay {
+.video-card:hover .play-icon-small {
   opacity: 1;
-  transform: scale(1);
-}
-
-.site-card-info {
-  padding: 20px;
-}
-
-.site-card-info h4 {
-  color: white;
-  margin: 0 0 4px 0;
-  font-size: 1rem;
-}
-
-.site-card-info p {
-  color: #94a3b8;
-  margin: 0;
-  font-size: 0.85rem;
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .mt-40 {
@@ -478,11 +543,16 @@
   color: white;
   background: transparent;
   padding: 14px 28px;
+  border-radius: 999px;
+  border: 1px solid;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s;
 }
 
 .btn-outline-light:hover {
   background: white;
-  color: var(--site-blue-gradient-1);
+  color: var(--video-blue-gradient-1);
 }
 
 /* ==========================================================================
@@ -490,8 +560,7 @@
    ========================================================================== */
 .final-cta-section {
   padding: 0;
-  /* O padding é manipulado pela margem negativa do card */
-  background: var(--site-blue-gradient-1);
+  background: var(--video-blue-gradient-1);
   position: relative;
   overflow: visible !important;
   z-index: 10;
@@ -507,7 +576,6 @@
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
   position: relative;
   top: -80px;
-  /* Sobrepõe a section dark blue e o que vier embaixo */
   margin-bottom: -80px;
 }
 
@@ -536,13 +604,13 @@
 
 .cta-content h2 {
   font-size: clamp(1.5rem, 2.5vw, 2.2rem);
-  color: var(--site-text-dark);
+  color: var(--video-text-dark);
   margin: 0 0 16px 0;
   line-height: 1.2;
 }
 
 .cta-content h2 span {
-  color: var(--site-blue-main);
+  color: var(--video-blue-main);
 }
 
 .cta-benefits {
@@ -561,7 +629,7 @@
 }
 
 .cta-benefits i {
-  color: var(--site-blue-main);
+  color: var(--video-blue-main);
 }
 
 .cta-action .btn-large {
@@ -572,10 +640,9 @@
 /* ==========================================================================
    FOOTER
    ========================================================================== */
-.sites-footer {
-  background: var(--site-blue-gradient-1);
+.videos-footer {
+  background: var(--video-blue-gradient-1);
   padding: 120px 0 40px;
-  /* Padding top extra por causa da margem negativa do CTA */
 }
 
 .footer-copy {
@@ -590,27 +657,27 @@
    RESPONSIVE
    ========================================================================== */
 @media (max-width: 991px) {
-  .sites-hero-grid {
+  .videos-hero-grid {
     grid-template-columns: 1fr;
     text-align: center;
   }
 
-  .sites-hero-content {
+  .videos-hero-content {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .sites-hero-text {
+  .videos-hero-text {
     margin-left: auto;
     margin-right: auto;
   }
 
-  .sites-features-row {
+  .videos-features-row {
     justify-content: center;
   }
 
-  .sites-hero-actions {
+  .videos-hero-actions {
     justify-content: center;
   }
 
@@ -618,9 +685,7 @@
     flex-direction: column;
     text-align: center;
     padding: 40px 24px 24px;
-    /* Menos padding no bottom se necessário */
     margin-top: 60px;
-    /* Dá espaço pro boneco subir sem cortar muito no topo */
   }
 
   .cta-person {
@@ -634,10 +699,8 @@
     bottom: auto;
     left: auto;
     margin-top: -100px;
-    /* Faz a foto "saltar" pra cima do card no mobile */
     margin-bottom: -10px;
     width: 180px;
-    /* Um pouco menor para não ocupar muito espaço vertical */
   }
 
   .cta-benefits {
@@ -646,31 +709,26 @@
 }
 
 @media (max-width: 768px) {
-  .phone-img {
-    right: -10%;
-    width: 35%;
-  }
-
   .benefits-grid {
     grid-template-columns: 1fr;
   }
-
-  .features-grid-minimal {
+  
+  .video-type-card {
     grid-template-columns: 1fr;
+    padding: 32px 24px;
+    gap: 32px;
   }
 
-  .mid-hero-banner {
-    grid-template-columns: 1fr;
-    text-align: center;
-    padding: 40px 24px;
+  .video-tabs-nav {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .video-tab-btn {
+    justify-content: center;
   }
 
-  .mid-hero-content p {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .sites-portfolio-grid {
+  .video-portfolio-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -681,18 +739,7 @@
 }
 
 @keyframes float {
-  0% {
-    transform: translateY(0px);
-    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.1));
-  }
-
-  50% {
-    transform: translateY(-20px);
-    filter: drop-shadow(0 25px 30px rgba(0, 0, 0, 0.15));
-  }
-
-  100% {
-    transform: translateY(0px);
-    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.1));
-  }
+  0% { transform: translateY(0px); filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.1)); }
+  50% { transform: translateY(-20px); filter: drop-shadow(0 25px 30px rgba(0, 0, 0, 0.15)); }
+  100% { transform: translateY(0px); filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.1)); }
 }

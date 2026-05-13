@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vídeos Promocionais | Pedro Neto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/videos.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="index.html"><img src="img/pnlogo.png" width="50px" alt="Logo"></a>
+      <nav class="menu">
+        <a href="index.html#home">Home</a>
+        <div class="menu-item-has-children">
+          <a href="index.html#solucoes" aria-haspopup="true" aria-expanded="false" class="menu-trigger">Soluções <i
+              class="fa-solid fa-chevron-down"></i></a>
+          <div class="mega-menu">
+            <div class="mega-menu-container">
+              <div class="mega-column">
+                <h4 class="mega-title">Atrair Clientes</h4>
+                <a href="index.html#google-ads" class="mega-link">
+                  <div class="mega-icon"><i class="fa-solid fa-bullhorn"></i></div>
+                  <div class="mega-text">
+                    <span class="mega-name">Google Ads</span>
+                    <span class="mega-desc">Gestão de tráfego pago e campanhas para gerar leads e vendas</span>
+                  </div>
+                </a>
+              </div>
+              <div class="mega-column">
+                <h4 class="mega-title">Ter Presença Online</h4>
+                <a href="sites.html" class="mega-link">
+                  <div class="mega-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                  <div class="mega-text">
+                    <span class="mega-name">Sites</span>
+                    <span class="mega-desc">Criação de sites profissionais, rápidos e responsivos</span>
+                  </div>
+                </a>
+              </div>
+              <div class="mega-column">
+                <h4 class="mega-title">Criar Conteúdo</h4>
+                <a href="videos.html" class="mega-link">
+                  <div class="mega-icon"><i class="fa-solid fa-video"></i></div>
+                  <div class="mega-text">
+                    <span class="mega-name">Vídeos</span>
+                    <span class="mega-desc">Produção e edição de vídeos para atrair e engajar</span>
+                  </div>
+                </a>
+                <a href="index.html#artes" class="mega-link">
+                  <div class="mega-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                  <div class="mega-text">
+                    <span class="mega-name">Artes Gráficas</span>
+                    <span class="mega-desc">Design para redes sociais e identidade visual</span>
+                  </div>
+                </a>
+              </div>
+              <div class="mega-column">
+                <h4 class="mega-title">Escalar o Negócio</h4>
+                <a href="index.html#sistemas" class="mega-link">
+                  <div class="mega-icon"><i class="fa-solid fa-cogs"></i></div>
+                  <div class="mega-text">
+                    <span class="mega-name">Sistemas</span>
+                    <span class="mega-desc">Desenvolvimento de sistemas para otimizar processos</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="index.html#portfolio">Portfólio</a>
+        <a href="index.html#sobre">Sobre mim</a>
+        <a href="index.html#contato">Contato</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a href="https://wa.me/5511992075991" class="btn btn-outline desktop-cta cta-videos">Vamos conversar</a>
+    </div>
+  </header>
+
+  <div class="mobile-overlay" aria-hidden="true"></div>
+  <aside id="mobile-menu" class="mobile-menu" aria-hidden="true">
+    <button class="mobile-close" aria-label="Close menu">✕</button>
+    <nav class="mobile-nav">
+      <a href="index.html#home">Home</a>
+      <div class="mobile-menu-item-has-children">
+        <button class="mobile-menu-trigger" aria-expanded="false" aria-controls="mobile-mega-menu">Soluções <i
+            class="fa-solid fa-chevron-down"></i></button>
+        <div class="mobile-mega-menu" id="mobile-mega-menu">
+          <div class="mobile-mega-column">
+            <h4 class="mobile-mega-title">Atrair Clientes</h4>
+            <a href="index.html#google-ads" class="mobile-mega-link">
+              <div class="mega-icon"><i class="fa-solid fa-bullhorn"></i></div>
+              <div class="mega-text">
+                <span class="mega-name">Google Ads</span>
+                <span class="mega-desc">Gestão de tráfego pago</span>
+              </div>
+            </a>
+          </div>
+          <div class="mobile-mega-column">
+            <h4 class="mobile-mega-title">Ter Presença Online</h4>
+            <a href="sites.html" class="mobile-mega-link">
+              <div class="mega-icon"><i class="fa-solid fa-laptop-code"></i></div>
+              <div class="mega-text">
+                <span class="mega-name">Sites</span>
+                <span class="mega-desc">Criação de sites</span>
+              </div>
+            </a>
+          </div>
+          <div class="mobile-mega-column">
+            <h4 class="mobile-mega-title">Criar Conteúdo</h4>
+            <a href="videos.html" class="mobile-mega-link">
+              <div class="mega-icon"><i class="fa-solid fa-video"></i></div>
+              <div class="mega-text">
+                <span class="mega-name">Vídeos</span>
+                <span class="mega-desc">Produção e edição de vídeos</span>
+              </div>
+            </a>
+            <a href="index.html#artes" class="mobile-mega-link">
+              <div class="mega-icon"><i class="fa-solid fa-pen-nib"></i></div>
+              <div class="mega-text">
+                <span class="mega-name">Artes Gráficas</span>
+                <span class="mega-desc">Design para redes sociais</span>
+              </div>
+            </a>
+          </div>
+          <div class="mobile-mega-column">
+            <h4 class="mobile-mega-title">Escalar o Negócio</h4>
+            <a href="index.html#sistemas" class="mobile-mega-link">
+              <div class="mega-icon"><i class="fa-solid fa-cogs"></i></div>
+              <div class="mega-text">
+                <span class="mega-name">Sistemas</span>
+                <span class="mega-desc">Desenvolvimento de sistemas</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <a href="index.html#portfolio">Portfólio</a>
+      <a href="index.html#sobre">Sobre mim</a>
+      <a href="index.html#contato">Contato</a>
+    </nav>
+    <a href="https://wa.me/5511992075991" class="btn btn-outline mobile-menu-cta">Vamos conversar</a>
+  </aside>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="section videos-hero reveal">
+      <div class="container videos-hero-grid">
+        <div class="videos-hero-content">
+          <div class="videos-badge">VÍDEOS PROMOCIONAIS</div>
+          <h1>Vídeos que <span>conectam</span>, convencem e <span>vendem.</span></h1>
+          <p class="videos-hero-text">
+            Transforme visitantes em clientes com produções audiovisuais de alto impacto, feitas sob medida para o seu negócio.
+          </p>
+
+          <div class="videos-features-row">
+            <div class="video-feat"><i class="fa-solid fa-robot"></i> Produção com IA</div>
+            <div class="video-feat"><i class="fa-solid fa-pen-nib"></i> Roteiros que geram conexão</div>
+            <div class="video-feat"><i class="fa-solid fa-film"></i> Alta qualidade 4K / Full HD</div>
+            <div class="video-feat"><i class="fa-solid fa-bolt"></i> Entrega rápida e estratégica</div>
+          </div>
+
+          <div class="videos-hero-actions">
+            <a href="#contato" class="btn btn-primary videos-cta">Quero um vídeo incrível <i
+                class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="videos-hero-mockup">
+          <div class="videos-mockup-container">
+            <img src="img/videos-hero.png" alt="Câmera Cinematográfica" class="camera-img float-slow" />
+            <div class="floating-play">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="custom-shape-divider-bottom sites-hero-divider">
+        <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+          <path class="shape-fill-light"
+            d="M0,224L48,229.3C96,235,192,245,288,224C384,203,480,149,576,144C672,139,768,181,864,197.3C960,213,1056,203,1152,181.3C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+          </path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- POR QUE INVESTIR EM VÍDEOS? -->
+    <section class="section why-video reveal">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="eyebrow-text">POR QUE INVESTIR EM VÍDEOS?</span>
+          <h2 class="section-title">O formato que mais <span>converte</span> no digital</h2>
+          <p class="section-subtitle">O vídeo marketing é essencial para construir confiança, explicar seu produto e alavancar suas vendas de forma rápida.</p>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="benefit-card hover-lift">
+            <div class="benefit-icon"><i class="fa-solid fa-eye"></i></div>
+            <h3>Mais atenção</h3>
+            <p>Prenda a atenção do seu público logo nos primeiros segundos de contato.</p>
+          </div>
+          <div class="benefit-card hover-lift">
+            <div class="benefit-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <h3>Mais conversão</h3>
+            <p>Multiplique as taxas de conversão de landing pages e campanhas de anúncios.</p>
+          </div>
+          <div class="benefit-card hover-lift">
+            <div class="benefit-icon"><i class="fa-solid fa-heart"></i></div>
+            <h3>Mais engajamento</h3>
+            <p>Conteúdos em vídeo são os mais compartilhados e comentados nas redes sociais.</p>
+          </div>
+          <div class="benefit-card hover-lift">
+            <div class="benefit-icon"><i class="fa-solid fa-crown"></i></div>
+            <h3>Mais autoridade</h3>
+            <p>Apresente sua marca de forma profissional, moderna e confiável.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIPOS DE VÍDEOS (TABS) -->
+    <section class="section video-types reveal">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title">Escolha o tipo de vídeo <span>ideal para o seu objetivo</span></h2>
+          <p class="section-subtitle">Cada formato de vídeo tem um propósito. Descubra qual é a melhor estratégia para o seu negócio agora.</p>
+        </div>
+
+        <div class="video-tabs-nav">
+          <button class="video-tab-btn active" data-target="tab-anuncio">
+            <i class="fa-solid fa-bullhorn"></i> Anúncio
+          </button>
+          <button class="video-tab-btn" data-target="tab-storytelling">
+            <i class="fa-solid fa-book-open"></i> Storytelling
+          </button>
+          <button class="video-tab-btn" data-target="tab-animado">
+            <i class="fa-solid fa-shapes"></i> Animados (Explainer)
+          </button>
+          <button class="video-tab-btn" data-target="tab-whiteboard">
+            <i class="fa-solid fa-pen-fancy"></i> Whiteboard
+          </button>
+        </div>
+
+        <div class="video-tabs-container">
+          <!-- TAB: ANÚNCIO -->
+          <div class="video-tab-content active" id="tab-anuncio">
+            <div class="video-type-card">
+              <div class="video-type-mockup">
+                <img src="https://images.unsplash.com/photo-1535016120720-40c746a65652?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Anúncio Comercial" />
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="video-type-info">
+                <h3><i class="fa-solid fa-bullhorn"></i> Vídeos para Anúncios</h3>
+                <p>Vídeos comerciais dinâmicos e focados totalmente em prender a atenção e gerar conversão em plataformas como Instagram, Facebook e Google Ads.</p>
+                <ul class="video-type-list">
+                  <li><i class="fa-solid fa-check-circle"></i> Foco em atenção imediata (3 segundos)</li>
+                  <li><i class="fa-solid fa-check-circle"></i> Chamadas para ação (CTA) claras</li>
+                  <li><i class="fa-solid fa-check-circle"></i> Edição acelerada e dinâmica</li>
+                  <li><i class="fa-solid fa-check-circle"></i> Otimizados para tráfego pago</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB: STORYTELLING -->
+          <div class="video-tab-content" id="tab-storytelling">
+            <div class="video-type-card">
+              <div class="video-type-mockup">
+                <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Storytelling" />
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="video-type-info">
+                <h3><i class="fa-solid fa-book-open"></i> Storytelling Cinematográfico</h3>
+                <p>Conteúdos emocionais que constroem uma conexão real e humana com sua audiência, transmitindo os valores e a história da sua marca.</p>
+                <ul class="video-type-list">
+                  <li><i class="fa-solid fa-check-circle"></i> Conexão emocional profunda</li>
+                  <li><i class="fa-solid fa-check-circle"></i> Qualidade visual cinematográfica</li>
+                  <li><i class="fa-solid fa-check-circle"></i> Fortalecimento de marca (Branding)</li>
+                  <li><i class="fa-solid fa-check-circle"></i> Ideal para 'Sobre Nós' e manifestos</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB: ANIMADOS -->
+          <div class="video-tab-content" id="tab-animado">
+            <div class="video-type-card">
+              <div class="video-type-mockup">
+                <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Vídeos Animados" />
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="video-type-info">
+                <h3><i class="fa-solid fa-shapes"></i> Animados (Explainer)</h3>
+                <p>Animações explicativas perfeitas para demonstrar produtos complexos, softwares, aplicativos ou serviços de forma simples, visual e direta.</p>
+                <ul class="video-type-list">
+                  <li><i class="fa-solid fa-check-circle"></i> Simplifica produtos complexos</li>
+                  <li><i class="fa-solid fa-check-circle"></i> Visualização de interfaces (UI/UX)</li>
+                  <li><i class="fa-solid fa-check-circle"></i> Estilo moderno em 2D/3D</li>
+                  <li><i class="fa-solid fa-check-circle"></i> Excelente para SaaS e startups</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB: WHITEBOARD -->
+          <div class="video-tab-content" id="tab-whiteboard">
+            <div class="video-type-card">
+              <div class="video-type-mockup">
+                <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Whiteboard Video" />
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="video-type-info">
+                <h3><i class="fa-solid fa-pen-fancy"></i> Whiteboard Videos</h3>
+                <p>Estilo de desenho em quadro branco ideal para tutoriais, treinamentos e comunicação educacional de alto valor.</p>
+                <ul class="video-type-list">
+                  <li><i class="fa-solid fa-check-circle"></i> Alto poder de retenção e aprendizado</li>
+                  <li><i class="fa-solid fa-check-circle"></i> Ilustrações desenhadas em tempo real</li>
+                  <li><i class="fa-solid fa-check-circle"></i> Foco educacional e explicativo</li>
+                  <li><i class="fa-solid fa-check-circle"></i> Ótimo para cursos e infoprodutos</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="custom-shape-divider-bottom portfolio-divider">
+        <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+          <path class="shape-fill-darkblue"
+            d="M0,160L48,170.7C96,181,192,203,288,192C384,181,480,139,576,144C672,149,768,203,864,224C960,245,1056,235,1152,208C1248,181,1344,139,1392,117.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+          </path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- TRABALHOS RECENTES -->
+    <section class="section recent-work reveal">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="eyebrow-text">TRABALHOS RECENTES</span>
+          <h2 class="section-title">Portfólio <span>Audiovisual</span></h2>
+          <p class="section-subtitle">Confira alguns dos projetos de vídeo que produzimos recentemente para marcas em diversos setores.</p>
+        </div>
+
+        <div class="video-portfolio-grid">
+          <a href="#" class="video-card">
+            <img src="https://images.unsplash.com/photo-1626379953822-ba319505cefa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tech Startup Promo">
+            <div class="play-icon-small"><i class="fa-solid fa-play"></i></div>
+            <div class="video-card-content">
+              <h4>Tech Startup Promo</h4>
+              <p>Vídeo Explainer</p>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <img src="https://images.unsplash.com/photo-1518131672697-613becd4fab5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Campanha Imobiliária">
+            <div class="play-icon-small"><i class="fa-solid fa-play"></i></div>
+            <div class="video-card-content">
+              <h4>Campanha Imobiliária</h4>
+              <p>Anúncio / Conversão</p>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <img src="https://images.unsplash.com/photo-1542204165-65bf26472b9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Fotografia & Moda">
+            <div class="play-icon-small"><i class="fa-solid fa-play"></i></div>
+            <div class="video-card-content">
+              <h4>Lifestyle Fashion</h4>
+              <p>Storytelling Cinematográfico</p>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="SaaS Dashboard Demo">
+            <div class="play-icon-small"><i class="fa-solid fa-play"></i></div>
+            <div class="video-card-content">
+              <h4>Plataforma SaaS</h4>
+              <p>Vídeo Animado / UI</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="text-center mt-40">
+          <a href="index.html#portfolio" class="btn btn-outline-light">Ver mais projetos <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA SECTION -->
+    <section class="section final-cta-section final-cta-videos reveal">
+      <div class="container">
+        <div class="final-cta-card">
+          <div class="cta-person">
+            <img src="img/pn.png" alt="Pedro Neto">
+          </div>
+          <div class="cta-content">
+            <h2>Pronto para transformar suas ideias em vídeos que <span>geram resultados?</span></h2>
+            <div class="cta-benefits">
+              <span><i class="fa-solid fa-check-circle"></i> Roteiros persuasivos</span>
+              <span><i class="fa-solid fa-check-circle"></i> Entrega ágil</span>
+              <span><i class="fa-solid fa-check-circle"></i> Foco total em conversão</span>
+            </div>
+          </div>
+          <div class="cta-action">
+            <a href="https://wa.me/5511992075991" class="btn btn-primary btn-large videos-cta" style="border:none">Vamos conversar <i
+                class="fa-solid fa-paper-plane" style="margin-left: 8px;"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer videos-footer">
+    <div class="container footer-row">
+      <a class="logo" href="index.html"><img src="img/pnlogo.png" width="50px" alt="Logo"></a>
+      <div class="footer-links">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#solucoes">Soluções</a>
+        <a href="index.html#portfolio">Portfólio</a>
+        <a href="index.html#contato">Contato</a>
+      </div>
+      <div class="socials">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+    <div class="container text-center footer-copy">
+      <p>&copy; 2024 Pedro Neto. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5511992075991" class="whatsapp-btn" target="_blank" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M12 2a9.94 9.94 0 0 0-8.64 14.9L2 22l5.26-1.38A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.12.82.84-3.03-.2-.31A8.2 8.2 0 1 1 12 20.2Zm4.56-6.09c-.25-.13-1.48-.73-1.71-.81-.23-.08-.39-.12-.56.12-.17.25-.65.81-.79.98-.15.17-.29.19-.54.06-.25-.13-1.06-.39-2.01-1.25-.74-.66-1.24-1.48-1.39-1.73-.15-.25-.02-.39.11-.52.12-.12.25-.31.37-.46.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.23.9 2.43 1.03 2.6.13.17 1.76 2.69 4.26 3.77 2.51 1.08 2.51.72 2.97.68.46-.04 1.48-.6 1.69-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.31Z" />
+    </svg>
+  </a>
+
+  <script src="js/script.js"></script>
+  <script>
+    // Tab functionality for Video Types section (Scrollspy)
+    document.addEventListener("DOMContentLoaded", () => {
+      const tabBtns = document.querySelectorAll('.video-tab-btn');
+      const tabContents = document.querySelectorAll('.video-tab-content');
+
+      // Click to scroll
+      tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const targetId = btn.getAttribute('data-target');
+          const targetEl = document.getElementById(targetId);
+          if (targetEl) {
+            // Account for sticky header (76px) and sticky tabs padding (~70px)
+            const yOffset = -160; 
+            const y = targetEl.getBoundingClientRect().top + window.pageYOffset + yOffset;
+            window.scrollTo({top: y, behavior: 'smooth'});
+          }
+        });
+      });
+
+      // Scroll spy to activate tabs automatically
+      window.addEventListener('scroll', () => {
+        let current = '';
+        tabContents.forEach(section => {
+          const sectionTop = section.getBoundingClientRect().top;
+          // If the top of the section is near or above the sticky nav area
+          if (sectionTop <= 200) {
+            current = section.getAttribute('id');
+          }
+        });
+
+        if (current) {
+          tabBtns.forEach(btn => {
+            btn.classList.remove('active');
+            if (btn.getAttribute('data-target') === current) {
+              btn.classList.add('active');
+            }
+          });
+        } else if (tabContents.length > 0 && tabContents[0].getBoundingClientRect().top > 200) {
+           // Before scrolling down to the first one, keep the first one active
+           tabBtns.forEach(btn => btn.classList.remove('active'));
+           tabBtns[0].classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -224,6 +224,7 @@ button>* {
 }
 
 .nav {
+  position: relative;
   height: 76px;
   display: flex;
   align-items: center;
@@ -254,7 +255,6 @@ button>* {
 
 /* Mega Menu Desktop */
 .menu-item-has-children {
-  position: relative;
   display: flex;
   align-items: center;
   height: 100%;
@@ -272,7 +272,7 @@ button>* {
   left: 50%;
   transform: translateX(-50%) translateY(10px);
   width: max-content;
-  max-width: 90vw;
+  max-width: 100%;
   background: #ffffff;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-lg);
@@ -283,6 +283,17 @@ button>* {
   border: 1px solid #f0f0f0;
   pointer-events: none;
   z-index: 100;
+}
+
+/* Ponte invisível para evitar que o menu feche ao passar o mouse */
+.mega-menu::before {
+  content: '';
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background: transparent;
 }
 
 .menu-item-has-children:hover .mega-menu,
@@ -398,7 +409,7 @@ button>* {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease;
-  z-index: 70;
+  z-index: 1000;
   pointer-events: none;
 }
 
@@ -416,7 +427,7 @@ button>* {
   transform: translateX(100%);
   transition: transform 0.3s ease, visibility 0.3s ease;
   box-shadow: -10px 0 30px rgba(0, 0, 0, 0.12);
-  z-index: 80;
+  z-index: 1010;
   will-change: transform;
   pointer-events: none;
   /* Prevent the ✕ close button from ghosting over the hamburger */
