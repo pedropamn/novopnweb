@@ -782,12 +782,20 @@ document.addEventListener(
     setTimeout(() => { lbImg.src = ""; }, 350);
   };
 
-  // Click any work-item to enlarge its image
-  document.querySelectorAll(".work-item").forEach(item => {
-    item.addEventListener("click", () => {
+  // Click any work-item or portfolio card to enlarge its image
+  document.querySelectorAll(".work-item, .site-card, .art-card").forEach(item => {
+    item.addEventListener("click", (e) => {
+      e.preventDefault(); // Prevent default link behavior
       const img = item.querySelector("img");
       if (!img) return;
-      const caption = item.querySelector(".overlay")?.textContent || img.alt;
+      
+      let caption = img.alt;
+      if (item.classList.contains("work-item")) {
+         caption = item.querySelector(".overlay")?.textContent || img.alt;
+      } else if (item.classList.contains("site-card")) {
+         caption = item.querySelector(".site-card-info h4")?.textContent || img.alt;
+      }
+      
       openLightbox(img.src, caption);
     });
   });

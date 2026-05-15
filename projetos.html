@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projetos | Pedro Neto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/projetos.css" />
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="index.html"><img src="img/pnlogo.png" width="50px"></a>
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <div class="menu-item-has-children">
+          <a href="index.html#solucoes" aria-haspopup="true" aria-expanded="false" class="menu-trigger">Soluções <i
+              class="fa-solid fa-chevron-down"></i></a>
+          <div class="mega-menu">
+            <div class="mega-menu-container">
+
+              <div class="mega-column">
+                <h4 class="mega-title">Atrair Clientes</h4>
+                <a href="ads.html" class="mega-link">
+                  <div class="mega-icon"><i class="fa-solid fa-bullhorn"></i></div>
+                  <div class="mega-text">
+                    <span class="mega-name">Google Ads</span>
+                    <span class="mega-desc">Gestão de tráfego pago e campanhas para gerar leads e vendas</span>
+                  </div>
+                </a>
+              </div>
+
+              <div class="mega-column">
+                <h4 class="mega-title">Ter Presença Online</h4>
+                <a href="sites.html" class="mega-link">
+                  <div class="mega-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                  <div class="mega-text">
+                    <span class="mega-name">Sites</span>
+                    <span class="mega-desc">Criação de sites profissionais, rápidos e responsivos</span>
+                  </div>
+                </a>
+              </div>
+
+              <div class="mega-column">
+                <h4 class="mega-title">Criar Conteúdo</h4>
+                <a href="videos.html" class="mega-link">
+                  <div class="mega-icon"><i class="fa-solid fa-video"></i></div>
+                  <div class="mega-text">
+                    <span class="mega-name">Vídeos</span>
+                    <span class="mega-desc">Produção e edição de vídeos para atrair e engajar</span>
+                  </div>
+                </a>
+                <a href="artes.html" class="mega-link">
+                  <div class="mega-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                  <div class="mega-text">
+                    <span class="mega-name">Artes Gráficas</span>
+                    <span class="mega-desc">Design para redes sociais e identidade visual</span>
+                  </div>
+                </a>
+              </div>
+
+              <div class="mega-column">
+                <h4 class="mega-title">Escalar o Negócio</h4>
+                <a href="sistemas.html" class="mega-link">
+                  <div class="mega-icon"><i class="fa-solid fa-cogs"></i></div>
+                  <div class="mega-text">
+                    <span class="mega-name">Sistemas</span>
+                    <span class="mega-desc">Desenvolvimento de sistemas para otimizar processos</span>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <a href="projetos.html" class="active">Projetos</a>
+        <a href="index.html#contato">Contato</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <button class="btn btn-outline desktop-cta" onclick="window.location.href='index.html#contato'">Vamos
+        conversar</button>
+    </div>
+  </header>
+
+  <div class="mobile-overlay" aria-hidden="true"></div>
+  <aside id="mobile-menu" class="mobile-menu" aria-hidden="true">
+    <button class="mobile-close" aria-label="Close menu">✕</button>
+    <nav class="mobile-nav">
+      <a href="index.html">Home</a>
+      <div class="mobile-menu-item-has-children">
+        <button class="mobile-menu-trigger" aria-expanded="false" aria-controls="mobile-mega-menu">Soluções <i
+            class="fa-solid fa-chevron-down"></i></button>
+        <div class="mobile-mega-menu" id="mobile-mega-menu">
+
+          <div class="mobile-mega-column">
+            <h4 class="mobile-mega-title">Atrair Clientes</h4>
+            <a href="ads.html" class="mobile-mega-link">
+              <div class="mega-icon"><i class="fa-solid fa-bullhorn"></i></div>
+              <div class="mega-text">
+                <span class="mega-name">Google Ads</span>
+                <span class="mega-desc">Gestão de tráfego pago e campanhas para gerar leads e vendas</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="mobile-mega-column">
+            <h4 class="mobile-mega-title">Ter Presença Online</h4>
+            <a href="sites.html" class="mobile-mega-link">
+              <div class="mega-icon"><i class="fa-solid fa-laptop-code"></i></div>
+              <div class="mega-text">
+                <span class="mega-name">Sites</span>
+                <span class="mega-desc">Criação de sites profissionais, rápidos e responsivos</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="mobile-mega-column">
+            <h4 class="mobile-mega-title">Criar Conteúdo</h4>
+            <a href="videos.html" class="mobile-mega-link">
+              <div class="mega-icon"><i class="fa-solid fa-video"></i></div>
+              <div class="mega-text">
+                <span class="mega-name">Vídeos</span>
+                <span class="mega-desc">Produção e edição de vídeos para atrair e engajar</span>
+              </div>
+            </a>
+            <a href="artes.html" class="mobile-mega-link">
+              <div class="mega-icon"><i class="fa-solid fa-pen-nib"></i></div>
+              <div class="mega-text">
+                <span class="mega-name">Artes Gráficas</span>
+                <span class="mega-desc">Design para redes sociais e identidade visual</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="mobile-mega-column">
+            <h4 class="mobile-mega-title">Escalar o Negócio</h4>
+            <a href="sistemas.html" class="mobile-mega-link">
+              <div class="mega-icon"><i class="fa-solid fa-cogs"></i></div>
+              <div class="mega-text">
+                <span class="mega-name">Sistemas</span>
+                <span class="mega-desc">Desenvolvimento de sistemas para otimizar processos</span>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+      <a href="projetos.html" class="active">Projetos</a>
+      <a href="index.html#contato">Contato</a>
+    </nav>
+    <button class="btn btn-outline mobile-menu-cta" onclick="window.location.href='index.html#contato'">Vamos
+      conversar</button>
+  </aside>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="section projetos-hero reveal" style="padding-top: 140px;">
+      <div class="container hero-grid-projetos">
+        <div class="hero-content">
+          <div class="badge-projetos">PROJETOS</div>
+          <h1>Soluções digitais criadas para resolver <span>problemas reais.</span></h1>
+          <p>
+            Sistemas, ferramentas e experimentos criados para automatizar processos, aumentar a produtividade e
+            transformar ideias em soluções digitais completas.
+          </p>
+          <div class="hero-features-row">
+            <div class="feature-item"><i class="fa-solid fa-code-branch"></i> Open Source</div>
+            <div class="feature-item"><i class="fa-solid fa-desktop"></i> Sistemas Web</div>
+            <div class="feature-item"><i class="fa-solid fa-wrench"></i> Ferramentas</div>
+            <div class="feature-item"><i class="fa-solid fa-bolt"></i> Automação</div>
+          </div>
+        </div>
+        <div class="hero-mockups">
+          <div class="mockup-main">
+            <!-- Um placeholder escuro simulando dashboard -->
+            <div
+              style="background: #0f172a; width: 100%; height: 280px; border-radius: 16px; padding: 20px; box-sizing: border-box;">
+              <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+                <div style="width: 12px; height: 12px; border-radius: 50%; background: #ef4444;"></div>
+                <div style="width: 12px; height: 12px; border-radius: 50%; background: #eab308;"></div>
+                <div style="width: 12px; height: 12px; border-radius: 50%; background: #22c55e;"></div>
+              </div>
+              <div
+                style="height: 20px; width: 40%; background: rgba(255,255,255,0.1); border-radius: 4px; margin-bottom: 20px;">
+              </div>
+              <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px;">
+                <div style="height: 60px; background: rgba(255,255,255,0.05); border-radius: 8px;"></div>
+                <div style="height: 60px; background: rgba(255,255,255,0.05); border-radius: 8px;"></div>
+                <div style="height: 60px; background: rgba(255,255,255,0.05); border-radius: 8px;"></div>
+              </div>
+              <div style="height: 80px; background: rgba(38, 133, 190, 0.2); border-radius: 8px; margin-top: 15px;">
+              </div>
+            </div>
+          </div>
+          <div class="mockup-mobile">
+            <div
+              style="background: #1e293b; width: 100%; height: 200px; border-radius: 20px; padding: 15px; box-sizing: border-box;">
+              <div
+                style="height: 15px; width: 60%; background: rgba(255,255,255,0.1); border-radius: 4px; margin-bottom: 15px;">
+              </div>
+              <div style="height: 40px; background: rgba(38, 133, 190, 0.4); border-radius: 8px; margin-bottom: 10px;">
+              </div>
+              <div style="height: 40px; background: rgba(255,255,255,0.05); border-radius: 8px;"></div>
+            </div>
+          </div>
+          <div class="mockup-float-1">
+            <i class="fa-solid fa-chart-line" style="color: #22c55e;"></i>
+            <div>
+              <div style="font-size: 0.75rem; color: rgba(255,255,255,0.6);">Performance</div>
+              <div style="font-weight: bold; font-size: 1.1rem;">+98%</div>
+            </div>
+          </div>
+          <div class="mockup-float-2">
+            <i class="fa-solid fa-users" style="color: #3b82f6;"></i>
+            <div>
+              <div style="font-size: 0.75rem; color: rgba(255,255,255,0.6);">Usuários Ativos</div>
+              <div style="font-weight: bold; font-size: 1.1rem;">12.4k</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="custom-shape-divider-bottom" style="position: absolute; bottom: 0; width: 100%;">
+        <svg viewBox="0 0 1440 320" preserveAspectRatio="none" style="display: block; width: 100%; height: 60px;">
+          <path fill="#04102e"
+            d="M0,160L48,170.7C96,181,192,203,288,197.3C384,192,480,160,576,149.3C672,139,768,149,864,170.7C960,192,1056,224,1152,218.7C1248,213,1344,171,1392,149.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+          </path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- WRAPPER STICKY FILTERS -->
+    <div class="projetos-conteudo-wrapper">
+      <!-- FILTROS -->
+      <section class="filtros-section sticky-filters">
+        <div class="container filtros-container">
+          <div class="filtros-pills">
+            <div class="filtro-pill active" data-filter="tudo">Tudo</div>
+            <div class="filtro-pill" data-filter="open-source">Open Source</div>
+            <div class="filtro-pill" data-filter="sistemas">Sistemas</div>
+            <div class="filtro-pill" data-filter="ferramentas">Ferramentas</div>
+            <div class="filtro-pill" data-filter="ia">IA</div>
+            <div class="filtro-pill" data-filter="automacao">Automação</div>
+          </div>
+          <div class="search-bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Buscar projeto..." />
+          </div>
+        </div>
+      </section>
+
+      <!-- GRID DE PROJETOS -->
+      <section class="projetos-grid-section" style="padding-top: 80px;">
+        <div class="container">
+
+          <div class="projetos-grid">
+            <!-- Card 0 (Gestor Pro) -->
+            <article class="projeto-card" data-category="sistemas" style="cursor: pointer;" data-id="gestor-pro"
+              onclick="openAppModal('gestor-pro')">
+              <div class="projeto-img">
+                <div
+                  style="background: #0f172a; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                  <i class="fa-solid fa-crown" style="font-size: 4rem; color: rgba(255,255,255,0.1);"></i>
+                </div>
+              </div>
+              <div class="projeto-content">
+                <div class="projeto-header">
+                  <div class="projeto-logo" style="background: #0f172a; color: #eab308;"><i
+                      class="fa-solid fa-crown"></i></div>
+                  <h3 class="projeto-title">Gestor Pro</h3>
+                </div>
+                <p class="projeto-desc">Sistema de gestão empresarial completo para controlar clientes, financeiro,
+                  contratos e projetos.</p>
+                <div class="projeto-techs">
+                  <span class="p-tech">Laravel</span>
+                  <span class="p-tech">Livewire</span>
+                  <span class="p-tech">MySQL</span>
+                </div>
+                <div class="projeto-footer">
+                  <div class="status-badge status-private">
+                    <div class="status-dot"></div> Fechado
+                  </div>
+                  <div class="projeto-links">
+                    <a href="#" class="p-btn p-btn-outline">Demo</a>
+                    <a href="#" class="p-btn p-btn-solid">Ver <i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 1 -->
+            <article class="projeto-card" data-category="sistemas open-source" style="cursor: pointer;"
+              data-id="financeflow" onclick="openAppModal('financeflow')">
+              <div class="projeto-img">
+                <div
+                  style="background: #1e293b; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                  <i class="fa-solid fa-wallet" style="font-size: 4rem; color: rgba(255,255,255,0.1);"></i>
+                </div>
+              </div>
+              <div class="projeto-content">
+                <div class="projeto-header">
+                  <div class="projeto-logo" style="background: #3b82f6;"><i class="fa-solid fa-wallet"></i></div>
+                  <h3 class="projeto-title">FinanceFlow</h3>
+                </div>
+                <p class="projeto-desc">Sistema de gestão financeira pessoal e empresarial com relatórios, categorias e
+                  metas.</p>
+                <div class="projeto-techs">
+                  <span class="p-tech">Laravel</span>
+                  <span class="p-tech">MySQL</span>
+                  <span class="p-tech">Tailwind</span>
+                </div>
+                <div class="projeto-footer">
+                  <div class="status-badge status-open">
+                    <div class="status-dot"></div> Open Source
+                  </div>
+                  <div class="projeto-links">
+                    <a href="https://github.com/pedropamn" target="_blank" class="p-btn p-btn-outline"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="p-btn p-btn-solid">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="projeto-card" data-category="sistemas" style="cursor: pointer;" data-id="shophub"
+              onclick="openAppModal('shophub')">
+              <div class="projeto-img">
+                <div
+                  style="background: #2d1b4e; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                  <i class="fa-solid fa-bag-shopping" style="font-size: 4rem; color: rgba(255,255,255,0.1);"></i>
+                </div>
+              </div>
+              <div class="projeto-content">
+                <div class="projeto-header">
+                  <div class="projeto-logo" style="background: #8b5cf6;"><i class="fa-solid fa-lock"></i></div>
+                  <h3 class="projeto-title">ShopHub</h3>
+                </div>
+                <p class="projeto-desc">Plataforma de e-commerce completa com checkout, cupom, carrinho e integração de
+                  pagamentos.</p>
+                <div class="projeto-techs">
+                  <span class="p-tech">Laravel</span>
+                  <span class="p-tech">Livewire</span>
+                  <span class="p-tech">Stripe</span>
+                </div>
+                <div class="projeto-footer">
+                  <div class="status-badge status-private">
+                    <div class="status-dot"></div> Fechado
+                  </div>
+                  <div class="projeto-links">
+                    <a href="#" class="p-btn p-btn-outline">Demo</a>
+                    <a href="#" class="p-btn p-btn-solid">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="projeto-card" data-category="ferramentas open-source" style="cursor: pointer;"
+              data-id="taskboard" onclick="openAppModal('taskboard')">
+              <div class="projeto-img">
+                <div
+                  style="background: #14532d; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                  <i class="fa-solid fa-list-check" style="font-size: 4rem; color: rgba(255,255,255,0.1);"></i>
+                </div>
+              </div>
+              <div class="projeto-content">
+                <div class="projeto-header">
+                  <div class="projeto-logo" style="background: #22c55e;"><i class="fa-solid fa-check"></i></div>
+                  <h3 class="projeto-title">TaskBoard</h3>
+                </div>
+                <p class="projeto-desc">Quadro de tarefas colaborativo estilo Kanban para equipes e projetos.</p>
+                <div class="projeto-techs">
+                  <span class="p-tech">Vue.js</span>
+                  <span class="p-tech">Firebase</span>
+                  <span class="p-tech">Tailwind</span>
+                </div>
+                <div class="projeto-footer">
+                  <div class="status-badge status-open">
+                    <div class="status-dot"></div> Open Source
+                  </div>
+                  <div class="projeto-links">
+                    <a href="https://github.com/pedropamn" target="_blank" class="p-btn p-btn-outline"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="p-btn p-btn-solid">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="projeto-card" data-category="ia open-source" style="cursor: pointer;" data-id="aiassistant"
+              onclick="openAppModal('aiassistant')">
+              <div class="projeto-img">
+                <div
+                  style="background: #0f172a; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                  <i class="fa-solid fa-robot" style="font-size: 4rem; color: rgba(255,255,255,0.1);"></i>
+                </div>
+              </div>
+              <div class="projeto-content">
+                <div class="projeto-header">
+                  <div class="projeto-logo" style="background: #d946ef;"><i class="fa-solid fa-wand-magic-sparkles"></i>
+                  </div>
+                  <h3 class="projeto-title">AI Assistant</h3>
+                </div>
+                <p class="projeto-desc">Assistente inteligente integrado com OpenAI para respostas, análise e
+                  automações.</p>
+                <div class="projeto-techs">
+                  <span class="p-tech">Python</span>
+                  <span class="p-tech">FastAPI</span>
+                  <span class="p-tech">OpenAI</span>
+                </div>
+                <div class="projeto-footer">
+                  <div class="status-badge status-open">
+                    <div class="status-dot"></div> Open Source
+                  </div>
+                  <div class="projeto-links">
+                    <a href="https://github.com/pedropamn" target="_blank" class="p-btn p-btn-outline"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="p-btn p-btn-solid">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="projeto-card" data-category="sistemas ferramentas" style="cursor: pointer;"
+              data-id="analyticspro" onclick="openAppModal('analyticspro')">
+              <div class="projeto-img">
+                <div
+                  style="background: #0c4a6e; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                  <i class="fa-solid fa-chart-bar" style="font-size: 4rem; color: rgba(255,255,255,0.1);"></i>
+                </div>
+              </div>
+              <div class="projeto-content">
+                <div class="projeto-header">
+                  <div class="projeto-logo" style="background: #0ea5e9;"><i class="fa-solid fa-chart-simple"></i></div>
+                  <h3 class="projeto-title">Analytics Pro</h3>
+                </div>
+                <p class="projeto-desc">Dashboard de analytics com métricas avançadas, gráficos e exportação de dados.
+                </p>
+                <div class="projeto-techs">
+                  <span class="p-tech">Node.js</span>
+                  <span class="p-tech">Express</span>
+                  <span class="p-tech">ECharts</span>
+                </div>
+                <div class="projeto-footer">
+                  <div class="status-badge status-private">
+                    <div class="status-dot"></div> Fechado
+                  </div>
+                  <div class="projeto-links">
+                    <a href="#" class="p-btn p-btn-outline">Demo</a>
+                    <a href="#" class="p-btn p-btn-solid">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 6 -->
+            <article class="projeto-card" data-category="automacao open-source" style="cursor: pointer;"
+              data-id="autoflow" onclick="openAppModal('autoflow')">
+              <div class="projeto-img">
+                <div
+                  style="background: #451a03; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                  <i class="fa-solid fa-bolt" style="font-size: 4rem; color: rgba(255,255,255,0.1);"></i>
+                </div>
+              </div>
+              <div class="projeto-content">
+                <div class="projeto-header">
+                  <div class="projeto-logo" style="background: #f97316;"><i class="fa-solid fa-bolt"></i></div>
+                  <h3 class="projeto-title">AutoFlow</h3>
+                </div>
+                <p class="projeto-desc">Ferramenta de automação de fluxos de trabalho sem código integrando diversos
+                  apps.</p>
+                <div class="projeto-techs">
+                  <span class="p-tech">Node.js</span>
+                  <span class="p-tech">n8n</span>
+                  <span class="p-tech">Docker</span>
+                </div>
+                <div class="projeto-footer">
+                  <div class="status-badge status-open">
+                    <div class="status-dot"></div> Open Source
+                  </div>
+                  <div class="projeto-links">
+                    <a href="https://github.com/pedropamn" target="_blank" class="p-btn p-btn-outline"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="p-btn p-btn-solid">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="custom-shape-divider-bottom" style="position: absolute; bottom: 0; width: 100%;">
+          <svg viewBox="0 0 1440 320" preserveAspectRatio="none" style="display: block; width: 100%; height: 60px;">
+            <path fill="#071b49"
+              d="M0,192L48,186.7C96,181,192,171,288,181.3C384,192,480,224,576,213.3C672,203,768,149,864,133.3C960,117,1056,139,1152,160C1248,181,1344,203,1392,213.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+          </svg>
+        </div>
+      </section>
+    </div>
+
+    <!-- TECNOLOGIAS -->
+    <section class="tech-section">
+      <div class="container">
+        <h3 class="section-title-light">Tecnologias que movem os projetos</h3>
+        <div class="tech-grid">
+          <div class="tech-item"><i class="fa-brands fa-php"></i></div>
+          <div class="tech-item"><i class="fa-brands fa-python"></i></div>
+          <div class="tech-item"><i class="fa-brands fa-laravel"></i></div>
+          <div class="tech-item"><i class="fa-brands fa-js"></i></div>
+          <div class="tech-item"><i class="fa-brands fa-vuejs"></i></div>
+          <div class="tech-item"><i class="fa-brands fa-node-js"></i></div>
+          <div class="tech-item"><i class="fa-solid fa-database"></i></div>
+          <div class="tech-item"><i class="fa-brands fa-docker"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-premium reveal" style="position: relative;">
+      <div class="custom-shape-divider-top">
+        <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+          <path class="shape-fill-white" fill="#04102e"
+            d="M0,256L48,229.3C96,203,192,149,288,154.7C384,160,480,224,576,218.7C672,213,768,139,864,128C960,117,1056,171,1152,197.3C1248,224,1344,224,1392,224L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+          </path>
+        </svg>
+      </div>
+      <div class="container">
+        <div class="contact-split-card">
+          <!-- Left Panel -->
+          <div class="contact-left">
+            <div class="contact-bg-shapes">
+              <div class="contact-shape shape-1"></div>
+              <div class="contact-shape shape-2"></div>
+            </div>
+            <div class="contact-left-content">
+              <span class="contact-badge"><i class="fa-regular fa-comment-dots"></i> Vamos conversar?</span>
+              <h2 class="contact-title">Entre em contato <span class="contact-highlight">comigo!</span></h2>
+              <p class="contact-desc">Estou pronto para entender o seu projeto e transformar suas ideias em resultados
+                reais para o seu negócio.</p>
+
+              <div class="contact-methods">
+                <div class="method-item">
+                  <div class="method-icon"><i class="fa-regular fa-envelope"></i></div>
+                  <div class="method-text">
+                    <span class="method-label">Email</span>
+                    <span class="method-val">contato@pedronetoweb.com.br</span>
+                  </div>
+                </div>
+                <a href="https://wa.me/5511992075991" target="_blank" class="method-item" style="text-decoration: none; color: inherit;">
+                  <div class="method-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                  <div class="method-text">
+                    <span class="method-label">WhatsApp</span>
+                    <span class="method-val">11 99207-5991</span>
+                  </div>
+                </a>
+              </div>
+
+              <div class="contact-highlight-box">
+                <div class="highlight-icon"><i class="fa-solid fa-bolt"></i></div>
+                <div class="highlight-info">
+                  <h4>Resposta rápida</h4>
+                  <p>Costumo responder em poucos minutos.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Panel -->
+          <div class="contact-right">
+            <form class="contact-form-premium">
+              <div class="form-group">
+                <i class="fa-regular fa-user form-icon"></i>
+                <input type="text" placeholder="Seu nome" required />
+              </div>
+              <div class="form-group">
+                <i class="fa-regular fa-envelope form-icon"></i>
+                <input type="email" placeholder="Seu email" required />
+              </div>
+              <div class="form-group">
+                <i class="fa-regular fa-file-lines form-icon"></i>
+                <input type="text" placeholder="Assunto" required />
+              </div>
+              <div class="form-group align-top">
+                <i class="fa-solid fa-pen form-icon"></i>
+                <textarea placeholder="Sua mensagem" required></textarea>
+              </div>
+              <div class="g-recaptcha" data-sitekey="SEU_SITE_KEY_AQUI" style="margin-bottom: 20px;"></div>
+              <button class="btn-submit-premium" type="submit">
+                <i class="fa-regular fa-paper-plane"></i> Enviar mensagem
+              </button>
+              <p class="trust-text"><i class="fa-solid fa-lock"></i> Seus dados estão seguros. Não compartilhamos suas
+                informações.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" style="background: #04102e; border-top: 1px solid rgba(255,255,255,0.05);">
+    <div class="container footer-row" style="padding: 40px 0;">
+      <a class="logo" href="index.html"><img src="img/pnlogo.png" width="50px"></a>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#solucoes">Soluções</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="index.html#contato">Contato</a>
+      </div>
+      <div class="socials">
+        <a href="https://github.com/pedropamn" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const pills = document.querySelectorAll('.filtro-pill');
+      const projetos = document.querySelectorAll('.projeto-card');
+      const searchInput = document.querySelector('.search-bar input');
+
+      const filterProjects = () => {
+        const activePill = document.querySelector('.filtro-pill.active');
+        const filter = activePill ? activePill.getAttribute('data-filter') : 'tudo';
+        const searchTerm = searchInput ? searchInput.value.toLowerCase() : '';
+
+        projetos.forEach(proj => {
+          const category = proj.getAttribute('data-category') || '';
+          const title = proj.querySelector('.projeto-title').textContent.toLowerCase();
+          const desc = proj.querySelector('.projeto-desc').textContent.toLowerCase();
+
+          const matchesFilter = (filter === 'tudo' || category.includes(filter));
+          const matchesSearch = (title.includes(searchTerm) || desc.includes(searchTerm));
+
+          if (matchesFilter && matchesSearch) {
+            proj.style.display = 'flex';
+            setTimeout(() => { proj.style.opacity = '1'; proj.style.transform = 'translateY(0)'; }, 50);
+          } else {
+            proj.style.opacity = '0';
+            proj.style.transform = 'translateY(20px)';
+            setTimeout(() => { proj.style.display = 'none'; }, 300);
+          }
+        });
+      };
+
+      pills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          pills.forEach(p => p.classList.remove('active'));
+          pill.classList.add('active');
+          filterProjects();
+        });
+      });
+
+      if (searchInput) {
+        searchInput.addEventListener('input', filterProjects);
+      }
+    });
+
+    // App Store Modal Logic
+    const projectsData = {
+      "gestor-pro": {
+        title: "Gestor Pro",
+        subtitle: "Gestão Empresarial Completa",
+        logoColor: "#0f172a",
+        logoIcon: "fa-solid fa-crown",
+        iconColor: "#eab308",
+        techs: ["Laravel", "Livewire", "MySQL", "Tailwind", "Docker"],
+        desc: `
+          <p>Gestor Pro é um sistema de gestão empresarial projetado para controlar todas as operações do seu negócio em um único dashboard intuitivo. Desde o controle financeiro até a gestão de clientes, contratos e equipe.</p>
+          <p>Desenvolvido pensando em pequenas e médias empresas, a plataforma elimina a necessidade de múltiplas ferramentas, centralizando os dados e gerando relatórios automáticos de performance.</p>
+          <ul>
+            <li>Dashboard analítico em tempo real para rápida tomada de decisão</li>
+            <li>Emissão de notas fiscais e controle automatizado de contratos</li>
+            <li>Gestão avançada de permissões por usuário e níveis de acesso</li>
+          </ul>
+        `,
+        stats: [
+          { val: "2.4k", label: "Usuários Ativos" },
+          { val: "120k+", label: "Registros" },
+          { val: "99.9%", label: "Uptime" }
+        ],
+        links: { primary: "#", github: null },
+        screenshots: [
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=800&q=80"
+        ]
+      },
+      "financeflow": {
+        title: "FinanceFlow",
+        subtitle: "Gestão Financeira Pessoal",
+        logoColor: "#3b82f6",
+        logoIcon: "fa-solid fa-wallet",
+        iconColor: "#fff",
+        techs: ["Laravel", "MySQL", "Tailwind"],
+        desc: `
+          <p>Um sistema completo para organizar as suas finanças. Categorize despesas, acompanhe metas de economia e visualize para onde está indo o seu dinheiro através de gráficos interativos.</p>
+          <p>Projeto 100% open-source com foco em privacidade e autonomia. Você pode rodar na sua própria infraestrutura e ser dono dos seus próprios dados bancários.</p>
+        `,
+        stats: [
+          { val: "1.2k", label: "Estrelas no GitHub" },
+          { val: "50+", label: "Contribuidores" }
+        ],
+        links: { primary: "#", github: "#" },
+        screenshots: [
+          "https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80"
+        ]
+      },
+      "shophub": {
+        title: "ShopHub",
+        subtitle: "Plataforma de E-commerce",
+        logoColor: "#8b5cf6",
+        logoIcon: "fa-solid fa-lock",
+        iconColor: "#fff",
+        techs: ["Laravel", "Livewire", "Stripe"],
+        desc: `<p>Solução robusta de e-commerce com checkout transparente, sistema de cupons, gestão de estoque e integração total com o Stripe para processamento de pagamentos seguros e anti-fraude.</p>`,
+        stats: [{ val: "10ms", label: "Latência Média" }, { val: "24/7", label: "Suporte" }],
+        links: { primary: "#", github: null },
+        screenshots: ["https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80"]
+      },
+      "taskboard": {
+        title: "TaskBoard",
+        subtitle: "Kanban Colaborativo",
+        logoColor: "#22c55e",
+        logoIcon: "fa-solid fa-check",
+        iconColor: "#fff",
+        techs: ["Vue.js", "Firebase", "Tailwind"],
+        desc: `<p>Uma abordagem minimalista para gestão de tarefas em equipe. O TaskBoard utiliza sincronização em tempo real via Firebase para garantir que toda a equipe veja as atualizações instantaneamente, sem precisar atualizar a página.</p>`,
+        stats: [{ val: "0.5s", label: "Sincronização" }, { val: "Infinito", label: "Projetos" }],
+        links: { primary: "#", github: "#" },
+        screenshots: ["https://images.unsplash.com/photo-1611224923853-80b023f02d71?auto=format&fit=crop&w=800&q=80"]
+      },
+      "aiassistant": {
+        title: "AI Assistant",
+        subtitle: "Assistente Inteligente",
+        logoColor: "#d946ef",
+        logoIcon: "fa-solid fa-wand-magic-sparkles",
+        iconColor: "#fff",
+        techs: ["Python", "FastAPI", "OpenAI"],
+        desc: `<p>API flexível e rápida que serve como ponte entre aplicações convencionais e os modelos da OpenAI. Possui capacidade nativa de análise de dados, extração de insights e conversão de linguagem natural para SQL.</p>`,
+        stats: [{ val: "GPT-4", label: "Modelo Base" }, { val: "100ms", label: "Resposta API" }],
+        links: { primary: "#", github: "#" },
+        screenshots: ["https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"]
+      },
+      "analyticspro": {
+        title: "Analytics Pro",
+        subtitle: "Dashboard de Métricas",
+        logoColor: "#0ea5e9",
+        logoIcon: "fa-solid fa-chart-simple",
+        iconColor: "#fff",
+        techs: ["Node.js", "Express", "ECharts"],
+        desc: `<p>Uma ferramenta poderosa para transformar grandes volumes de dados brutos em gráficos legíveis e acionáveis, auxiliando líderes a tomar decisões melhores e mais rápidas através de data storytelling.</p>`,
+        stats: [{ val: "1M+", label: "Eventos/Dia" }, { val: "ECharts", label: "Motor Gráfico" }],
+        links: { primary: "#", github: null },
+        screenshots: ["https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"]
+      },
+      "autoflow": {
+        title: "AutoFlow",
+        subtitle: "Automação No-Code",
+        logoColor: "#f97316",
+        logoIcon: "fa-solid fa-bolt",
+        iconColor: "#fff",
+        techs: ["Node.js", "n8n", "Docker"],
+        desc: `<p>Integre seus aplicativos favoritos de forma visual. O AutoFlow utiliza nós para ler e enviar informações, conectando CRMs a plataformas de e-mail e bancos de dados sem necessidade de escrever código.</p>`,
+        stats: [{ val: "200+", label: "Integrações" }, { val: "Zero", label: "Código" }],
+        links: { primary: "#", github: "#" },
+        screenshots: ["https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80"]
+      }
+    };
+
+    function openAppModal(projectId) {
+      const data = projectsData[projectId];
+      if (!data) return;
+
+      document.getElementById('modalLogo').style.background = data.logoColor;
+      document.getElementById('modalLogo').innerHTML = `<i class="${data.logoIcon}" style="color: ${data.iconColor}"></i>`;
+      document.getElementById('modalTitle').textContent = data.title;
+      document.getElementById('modalSubtitle').textContent = data.subtitle;
+
+      const btnPrimary = document.getElementById('modalBtnPrimary');
+      const btnGithub = document.getElementById('modalBtnGithub');
+
+      if (data.links.primary) {
+        btnPrimary.href = data.links.primary;
+        btnPrimary.style.display = 'inline-flex';
+      } else {
+        btnPrimary.style.display = 'none';
+      }
+
+      if (data.links.github) {
+        btnGithub.href = data.links.github;
+        btnGithub.style.display = 'inline-flex';
+      } else {
+        btnGithub.style.display = 'none';
+      }
+
+      const gallery = document.getElementById('modalGallery');
+      gallery.innerHTML = data.screenshots.map(src => `<img src="${src}" alt="Screenshot">`).join('');
+
+      document.getElementById('modalDesc').innerHTML = data.desc;
+
+      document.getElementById('modalTechs').innerHTML = data.techs.map(tech => `<span class="app-modal-tech-badge">${tech}</span>`).join('');
+
+      document.getElementById('modalStats').innerHTML = data.stats.map(stat => `
+        <div class="app-modal-stat-card">
+          <div class="app-modal-stat-val">${stat.val}</div>
+          <div class="app-modal-stat-label">${stat.label}</div>
+        </div>
+      `).join('');
+
+      document.getElementById('appModal').classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeAppModal() {
+      document.getElementById('appModal').classList.remove('is-open');
+      document.body.style.overflow = '';
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('appModal').addEventListener('click', (e) => {
+        if (e.target.id === 'appModal') {
+          closeAppModal();
+        }
+      });
+    });
+  </script>
+  <script src="js/script.js"></script>
+
+  <!-- APP STORE MODAL -->
+  <div class="app-modal-overlay" id="appModal" aria-hidden="true">
+    <div class="app-modal-content">
+      <button class="app-modal-close" aria-label="Fechar modal" onclick="closeAppModal()"><i
+          class="fa-solid fa-xmark"></i></button>
+
+      <div class="app-modal-scroll-area">
+        <div class="app-modal-header">
+          <div class="app-modal-logo" id="modalLogo"></div>
+          <div class="app-modal-header-info">
+            <h2 id="modalTitle">Projeto</h2>
+            <span class="app-modal-subtitle" id="modalSubtitle">Subtítulo</span>
+            <div class="app-modal-actions">
+              <a href="#" class="btn-blue" id="modalBtnPrimary" target="_blank"><i
+                  class="fa-solid fa-arrow-up-right-from-square"></i> Abrir</a>
+              <a href="https://github.com/pedropamn" class="btn-outline" id="modalBtnGithub" target="_blank"><i class="fa-brands fa-github"></i>
+                Código</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="app-modal-divider"></div>
+
+        <div class="app-modal-gallery" id="modalGallery"></div>
+
+        <div class="app-modal-divider"></div>
+
+        <div class="app-modal-body">
+          <h3>Sobre o Projeto</h3>
+          <div class="app-modal-desc" id="modalDesc"></div>
+
+          <div class="app-modal-stats" id="modalStats"></div>
+
+          <h3>Tecnologias</h3>
+          <div class="app-modal-techs" id="modalTechs"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
