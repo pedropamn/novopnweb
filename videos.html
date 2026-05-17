@@ -84,7 +84,7 @@
         <span></span>
         <span></span>
       </button>
-      <a href="https://wa.me/5511992075991" class="btn btn-outline desktop-cta cta-videos">Vamos conversar</a>
+      <a href="https://wa.me/5511992075991" target="_blank" class="btn btn-outline desktop-cta cta-videos">Vamos conversar</a>
     </div>
   </header>
 
@@ -150,7 +150,7 @@
       <a href="index.html#sobre">Sobre mim</a>
       <a href="index.html#contato">Contato</a>
     </nav>
-    <a href="https://wa.me/5511992075991" class="btn btn-outline mobile-menu-cta">Vamos conversar</a>
+    <a href="https://wa.me/5511992075991" target="_blank" class="btn btn-outline mobile-menu-cta">Vamos conversar</a>
   </aside>
 
   <main>
@@ -173,7 +173,7 @@
           </div>
 
           <div class="videos-hero-actions">
-            <a href="#contato" class="btn btn-primary videos-cta">Quero um vídeo incrível <i
+            <a href="https://wa.me/5511992075991" target="_blank" class="btn btn-primary videos-cta">Quero um vídeo incrível <i
                 class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
@@ -227,6 +227,24 @@
             <div class="benefit-icon"><i class="fa-solid fa-crown"></i></div>
             <h3>Mais autoridade</h3>
             <p>Apresente sua marca de forma profissional, moderna e confiável.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BANNER MID-HERO -->
+    <section class="section mid-hero reveal">
+      <div class="container">
+        <div class="mid-hero-banner hover-lift">
+          <div class="mid-hero-content">
+            <h2>Conteúdo que <span>vende</span> de verdade</h2>
+            <p>Vídeos estratégicos para redes sociais, anúncios e YouTube que conectam e convertem clientes.</p>
+            <a href="https://wa.me/5511992075991" target="_blank" class="btn btn-primary videos-cta mt-20"
+              style="background: white; color: var(--video-blue-main);">Quero um vídeo incrível <i
+                class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="mid-hero-lottie">
+            <div id="lottie-videos" style="width: 100%; max-width: 450px; margin: 0 auto;"></div>
           </div>
         </div>
       </div>
@@ -436,7 +454,7 @@
             </div>
           </div>
           <div class="cta-action">
-            <a href="https://wa.me/5511992075991" class="btn btn-primary btn-large videos-cta" style="border:none">Vamos
+            <a href="https://wa.me/5511992075991" target="_blank" class="btn btn-primary btn-large videos-cta" style="border:none">Vamos
               conversar <i class="fa-solid fa-paper-plane" style="margin-left: 8px;"></i></a>
           </div>
         </div>
@@ -471,6 +489,18 @@
     </svg>
   </a>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      lottie.loadAnimation({
+        container: document.getElementById('lottie-videos'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'img/lottie/servicos/videos.json'
+      });
+    });
+  </script>
   <script src="js/script.js"></script>
   <script>
     // Tab functionality for Video Types section (Scrollspy)

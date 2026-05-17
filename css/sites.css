@@ -566,21 +566,35 @@
 
 .cta-benefits {
   display: flex;
-  gap: 20px;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 12px;
 }
 
 .cta-benefits span {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-size: 0.9rem;
-  color: #64748b;
-  font-weight: 500;
+  background: rgba(38, 133, 190, 0.08);
+  border: 1px solid rgba(38, 133, 190, 0.2);
+  backdrop-filter: blur(8px);
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--site-blue-main);
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.cta-benefits span:hover {
+  background: rgba(38, 133, 190, 0.15);
+  transform: translateY(-2px);
 }
 
 .cta-benefits i {
   color: var(--site-blue-main);
+  font-size: 0.9rem;
 }
 
 .cta-action .btn-large {

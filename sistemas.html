@@ -84,7 +84,7 @@
         <span></span>
         <span></span>
       </button>
-      <a href="https://wa.me/5511992075991" class="btn btn-outline desktop-cta cta-sys">Vamos conversar</a>
+      <a href="https://wa.me/5511992075991" target="_blank" class="btn btn-outline desktop-cta cta-sys">Vamos conversar</a>
     </div>
   </header>
 
@@ -150,7 +150,7 @@
       <a href="index.html#sobre">Sobre mim</a>
       <a href="index.html#contato">Contato</a>
     </nav>
-    <a href="https://wa.me/5511992075991" class="btn btn-outline mobile-menu-cta">Vamos conversar</a>
+    <a href="https://wa.me/5511992075991" target="_blank" class="btn btn-outline mobile-menu-cta">Vamos conversar</a>
   </aside>
 
   <main>
@@ -173,7 +173,7 @@
           </div>
 
           <div class="sys-hero-actions">
-            <a href="#contato" class="btn btn-primary sys-cta">Criar meu sistema <i
+            <a href="https://wa.me/5511992075991" target="_blank" class="btn btn-primary sys-cta">Criar meu sistema <i
                 class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
@@ -224,6 +224,24 @@
             <div class="benefit-icon"><i class="fa-solid fa-arrow-up-right-dots"></i></div>
             <h3>Escalabilidade</h3>
             <p>Sistemas construídos na nuvem, preparados para crescer junto com sua empresa sem perder performance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BANNER MID-HERO -->
+    <section class="section mid-hero reveal">
+      <div class="container">
+        <div class="mid-hero-banner hover-lift">
+          <div class="mid-hero-content">
+            <h2>Transforme seu negócio com um <span>sistema sob medida</span></h2>
+            <p>Automatize processos, ganhe produtividade e escale sua empresa com tecnologia de alto nível.</p>
+            <a href="https://wa.me/5511992075991" target="_blank" class="btn btn-primary sys-cta mt-20"
+              style="background: white; color: var(--sys-blue-main);">Criar meu sistema <i
+                class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="mid-hero-lottie">
+            <div id="lottie-sistemas" style="width: 100%; max-width: 450px; margin: 0 auto;"></div>
           </div>
         </div>
       </div>
@@ -413,7 +431,7 @@
               <span><i class="fa-solid fa-check-circle"></i> Soluções sob medida</span>
             </div>
             <div class="cta-action" style="margin-top: 32px;">
-              <a href="https://wa.me/5511992075991" class="btn btn-primary btn-large sys-cta" style="border:none">Quero
+              <a href="https://wa.me/5511992075991" target="_blank" class="btn btn-primary btn-large sys-cta" style="border:none">Quero
                 falar sobre meu projeto <i class="fa-solid fa-paper-plane" style="margin-left: 8px;"></i></a>
             </div>
           </div>
@@ -452,6 +470,18 @@
     </svg>
   </a>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      lottie.loadAnimation({
+        container: document.getElementById('lottie-sistemas'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'img/lottie/servicos/sistemas.json'
+      });
+    });
+  </script>
   <script src="js/script.js"></script>
 </body>
 

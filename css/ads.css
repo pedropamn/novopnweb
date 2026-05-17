@@ -245,7 +245,7 @@
 
 .ads-services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 32px;
   margin-top: 50px;
 }
@@ -258,6 +258,7 @@
   border: 1px solid rgba(0, 0, 0, 0.03);
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .ads-service-card:hover {
@@ -267,17 +268,23 @@
 }
 
 .ads-service-icon {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   background: white;
   color: var(--ads-blue-main);
-  border-radius: 14px;
+  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.4rem;
-  margin-bottom: 24px;
+  font-size: 2rem;
+  margin: 0 auto 24px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ads-service-card:hover .ads-service-icon {
+  transform: scale(1.1) rotate(3deg);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
 .ads-service-card h4 {
@@ -344,23 +351,36 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 12px;
   margin-top: 60px;
-  border-top: 1px solid #f1f5f9;
   padding-top: 40px;
+  border-top: 1px solid #f1f5f9;
 }
 
 .ads-service-benefits span {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-size: 0.95rem;
-  color: #64748b;
-  font-weight: 500;
+  background: rgba(38, 133, 190, 0.08);
+  border: 1px solid rgba(38, 133, 190, 0.2);
+  backdrop-filter: blur(8px);
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--ads-blue-main);
+  transition: background 0.25s ease, transform 0.25s ease;
 }
 
-.ads-service-benefits i {
+.ads-service-benefits span:hover {
+  background: rgba(38, 133, 190, 0.15);
+  transform: translateY(-2px);
+}
+
+.ads-service-benefits span i {
   color: var(--ads-blue-main);
+  font-size: 0.9rem;
 }
 
 /* ==========================================================================
@@ -572,21 +592,35 @@
 
 .cta-benefits {
   display: flex;
-  gap: 20px;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 12px;
 }
 
 .cta-benefits span {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-size: 0.9rem;
-  color: #64748b;
-  font-weight: 500;
+  background: rgba(38, 133, 190, 0.08);
+  border: 1px solid rgba(38, 133, 190, 0.2);
+  backdrop-filter: blur(8px);
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--ads-blue-main);
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.cta-benefits span:hover {
+  background: rgba(38, 133, 190, 0.15);
+  transform: translateY(-2px);
 }
 
 .cta-benefits i {
   color: var(--ads-blue-main);
+  font-size: 0.9rem;
 }
 
 .cta-action .btn-large {
@@ -636,6 +670,62 @@
 .btn-outline-light:hover {
   background: white;
   color: var(--ads-blue-gradient-1);
+}
+
+/* ==========================================================================
+   MID HERO BANNER
+   ========================================================================== */
+.mid-hero {
+  background: white;
+  padding: 40px 0 60px;
+}
+
+.mid-hero-banner {
+  background: linear-gradient(135deg, var(--ads-blue-gradient-1), var(--ads-blue-gradient-3));
+  border-radius: 32px;
+  padding: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  box-shadow: 0 25px 50px rgba(7, 27, 73, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.mid-hero-banner::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.mid-hero-content h2 {
+  color: white;
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  margin: 0 0 16px 0;
+  line-height: 1.2;
+}
+
+.mid-hero-content h2 span {
+  color: #8ed1fc;
+}
+
+.mid-hero-content p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0 0 32px 0;
+  max-width: 450px;
+}
+
+.mt-20 {
+  margin-top: 20px;
 }
 
 /* ==========================================================================
@@ -698,9 +788,25 @@
   .cta-icon-right {
     display: none;
   }
+
+  .ads-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
 }
 
 @media (max-width: 768px) {
+  .mid-hero-banner {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 40px 24px;
+  }
+
+  .mid-hero-content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .benefits-grid {
     grid-template-columns: 1fr;
   }

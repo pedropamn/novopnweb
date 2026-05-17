@@ -84,7 +84,7 @@
         <span></span>
         <span></span>
       </button>
-      <a href="https://wa.me/5511992075991" class="btn btn-outline desktop-cta cta-artes">Vamos conversar</a>
+      <a href="https://wa.me/5511992075991" target="_blank" class="btn btn-outline desktop-cta cta-artes">Vamos conversar</a>
     </div>
   </header>
 
@@ -150,7 +150,7 @@
       <a href="index.html#sobre">Sobre mim</a>
       <a href="index.html#contato">Contato</a>
     </nav>
-    <a href="https://wa.me/5511992075991" class="btn btn-outline mobile-menu-cta">Vamos conversar</a>
+    <a href="https://wa.me/5511992075991" target="_blank" class="btn btn-outline mobile-menu-cta">Vamos conversar</a>
   </aside>
 
   <main>
@@ -173,7 +173,7 @@
           </div>
 
           <div class="artes-hero-actions">
-            <a href="#contato" class="btn btn-primary artes-cta">Elevar minha marca <i
+            <a href="https://wa.me/5511992075991" target="_blank" class="btn btn-primary artes-cta">Elevar minha marca <i
                 class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
@@ -225,6 +225,24 @@
             <div class="benefit-icon"><i class="fa-solid fa-shield-halved"></i></div>
             <h3>Mais confiança</h3>
             <p>Uma marca bem apresentada, com identidade visual alinhada, transmite segurança instantânea.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BANNER MID-HERO -->
+    <section class="section mid-hero reveal">
+      <div class="container">
+        <div class="mid-hero-banner hover-lift">
+          <div class="mid-hero-content">
+            <h2>Design que faz sua marca <span>se destacar</span></h2>
+            <p>Artes profissionais que comunicam com clareza, geram engajamento e fortalecem sua identidade visual.</p>
+            <a href="https://wa.me/5511992075991" target="_blank" class="btn btn-primary artes-cta mt-20"
+              style="background: white; color: var(--artes-blue-main);">Elevar minha marca <i
+                class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="mid-hero-lottie">
+            <div id="lottie-artes" style="width: 100%; max-width: 450px; margin: 0 auto;"></div>
           </div>
         </div>
       </div>
@@ -395,7 +413,7 @@
               <span><i class="fa-solid fa-check-circle"></i> Soluções sob medida</span>
             </div>
             <div class="cta-action" style="margin-top: 32px;">
-              <a href="https://wa.me/5511992075991" class="btn btn-primary btn-large artes-cta"
+              <a href="https://wa.me/5511992075991" target="_blank" class="btn btn-primary btn-large artes-cta"
                 style="border:none">Quero um design incrível <i class="fa-solid fa-paper-plane"
                   style="margin-left: 8px;"></i></a>
             </div>
@@ -441,6 +459,18 @@
     <span class="portfolio-lightbox__caption" id="portfolio-lightbox-caption"></span>
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      lottie.loadAnimation({
+        container: document.getElementById('lottie-artes'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'img/lottie/servicos/artes.json'
+      });
+    });
+  </script>
   <script src="js/script.js"></script>
 </body>
 
