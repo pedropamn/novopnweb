@@ -250,13 +250,13 @@
 }
 
 .benefit-card h3 {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-bottom: 12px;
   color: var(--site-text-dark);
 }
 
 .benefit-card p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #64748b;
   line-height: 1.5;
   margin: 0;
